@@ -20,6 +20,9 @@
 import openpyxl
 from openpyxl import Workbook
 from openpyxl.styles import Color, PatternFill, Font, Border
+from openpyxl.styles.differential import DifferentialStyle
+from openpyxl.formatting.rule import ColorScaleRule, CellIsRule, FormulaRule
+from openpyxl.formatting.rule import Rule
 from openpyxl.utils import get_column_letter
 import glob
 import os
@@ -43,9 +46,11 @@ end_col_week = 'T'
 lecture_col_width = 25
 col_title_width = 15
 
+start_index_title = 3 # titles column starts at C
 
 GREY = "696969"
 PASTEL = "5f9ea0"
+YELLOW = "fdfd96"
 
 col_titles = ['Slides',             # if lecture has been prepared
               'Lecture',            # if lecture has been attended
@@ -78,7 +83,6 @@ def main():
         f.close()
 
         # adding columns titles
-        start_index_title = 3 # titles column starts at C
         for i, title in enumerate(col_titles):
             column_index = start_index_title + i
             ws.cell(column = column_index, row = title_row).\
@@ -119,6 +123,25 @@ def main():
                     value = lectures_list.pop(0)
 
             # TODO: add pending value to column
+            yellow_fill = PatternFill(bgColor = YELLOW)
+            pending_rule_style = DifferentialStyle(fill = yellow_fill)
+
+            for i, _ in enumerate(col_titles):
+                column_index = start_index_title + i
+                ws.cell(column = column_index, row = row_index).\
+                        value = "Pending"  
+                column_letter = get_column_letter(column_index)
+                pending_rule = Rule(type = "containsText",
+                        operator = "containsText", text = "Pending",
+                        dxf = pending_rule_style)
+                pending_rule.formula =\
+                    [f'NOT(ISERROR(SEARCH("Pending",{column_letter}{row_index})))']
+                ws.conditional_formatting.add(f'{column_letter}{row_index}',
+                        pending_rule)
+
+
+
+            # TODO: add conditional formating to make date green
 
             # increment index
             lecture_index += 1
