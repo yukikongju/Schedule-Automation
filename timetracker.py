@@ -24,7 +24,8 @@ import os
 from openpyxl import Workbook
 from openpyxl.styles import Color, PatternFill, Font, Border
 from openpyxl.styles import colors
-from openpyxl.cell import Cell
+#  from openpyxl.cell import Cell
+from openpyxl.utils import get_column_letter
 
 legend = {'Active Recall': '#ff0000', 
           'TPs and Exercices': '#ff0000',
@@ -65,20 +66,25 @@ def main():
         # Add legend to tab
         ws['K4'] = "Légende"
         for i, tag in enumerate(legend):
-            #  line = 6+i #6 is the cell where the legend begins
+            line = 6+i #6 is the cell where the legend begins
             ws[f'K{6+i}'] = f"{tag}"  
             background_color = openpyxl.styles.colors.Color(rgb = legend[tag][1:])
             fill_color = openpyxl.styles.fills.PatternFill(patternType='solid',\
                     fgColor=background_color)
             ws[f'K{6+i}'].fill = fill_color
             
-        # Adjust columm width
+        #  Adjust columm width
         ws.column_dimensions['K'].width = column_width # adjust legend col width
-        ws.column_dimensions['B:H'] = column_width # adjust days column width
+        #  for i in enumerate(days_of_week)
+        #  ws.column_dimensions['B'].width = column_width # adjust days column width
 
-        # Add days of week
+        #  Add days of week
         for i, day in enumerate(days_of_week):
-            _ = ws.cell(column = i + 2, row = row_title, value = day)
+            column_index = i+2
+            _ = ws.cell(column = column_index, row = row_title, value = day)
+            column_letter = get_column_letter(column_index)
+            # adjust days column width
+            ws.column_dimensions[f'{column_letter}'].width = column_width 
 
         # Add dates above days of week
         
