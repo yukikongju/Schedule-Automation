@@ -26,6 +26,8 @@ from openpyxl.styles import Color, PatternFill, Font, Border
 from openpyxl.styles import colors
 from openpyxl.cell import Cell
 
+from utils import DAYS_OF_WEEK_FRENCH
+
 legend = {'Active Recall': '#ff0000', 
           'TPs and Exercices': '#ff0000',
           #  'Slides':'#151',
@@ -39,8 +41,8 @@ legend = {'Active Recall': '#ff0000',
           #  'Eating': '#324',
           'Training':'#0999ff'}
 
-days_of_week = ['Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi',
-        'Dimanche']
+#  days_of_week = ['Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi',
+#          'Dimanche']
 
 start_day = '' # time at which we start our day 
 end_day = '' # time at which we end our time increment
@@ -77,7 +79,7 @@ def main():
         ws.column_dimensions['B:H'] = column_width # adjust days column width
 
         # Add days of week
-        for i, day in enumerate(days_of_week):
+        for i, day in enumerate(DAYS_OF_WEEK_FRENCH):
             _ = ws.cell(column = i + 2, row = row_title, value = day)
 
         # Add dates above days of week
