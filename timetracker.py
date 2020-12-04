@@ -24,7 +24,8 @@ import os
 from openpyxl import Workbook
 from openpyxl.styles import Color, PatternFill, Font, Border
 from openpyxl.styles import colors
-from openpyxl.cell import Cell
+#  from openpyxl.cell import Cell
+from openpyxl.utils import get_column_letter
 
 from utils import DAYS_OF_WEEK_FRENCH
 
@@ -41,8 +42,8 @@ legend = {'Active Recall': '#ff0000',
           #  'Eating': '#324',
           'Training':'#0999ff'}
 
-#  days_of_week = ['Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi',
-#          'Dimanche']
+days_of_week = ['Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi',
+        'Dimanche']
 
 start_day = '' # time at which we start our day 
 end_day = '' # time at which we end our time increment
@@ -67,20 +68,23 @@ def main():
         # Add legend to tab
         ws['K4'] = "Légende"
         for i, tag in enumerate(legend):
-            #  line = 6+i #6 is the cell where the legend begins
+            line = 6+i #6 is the cell where the legend begins
             ws[f'K{6+i}'] = f"{tag}"  
             background_color = openpyxl.styles.colors.Color(rgb = legend[tag][1:])
             fill_color = openpyxl.styles.fills.PatternFill(patternType='solid',\
                     fgColor=background_color)
             ws[f'K{6+i}'].fill = fill_color
             
-        # Adjust columm width
+        #  Adjust columm width
         ws.column_dimensions['K'].width = column_width # adjust legend col width
-        ws.column_dimensions['B:H'] = column_width # adjust days column width
 
-        # Add days of week
-        for i, day in enumerate(DAYS_OF_WEEK_FRENCH):
-            _ = ws.cell(column = i + 2, row = row_title, value = day)
+        #  Add days of week
+        for i, day in enumerate(days_of_week):
+            column_index = i+2
+            _ = ws.cell(column = column_index, row = row_title, value = day)
+            column_letter = get_column_letter(column_index)
+            # adjust days column width
+            ws.column_dimensions[f'{column_letter}'].width = column_width 
 
         # Add dates above days of week
         
