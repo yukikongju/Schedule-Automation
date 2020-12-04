@@ -57,6 +57,8 @@ legend = {'Active Recall': Color.GREEN,
           'Wasted Time': Color.RED,
           'Social': Color.YELLOW,
           'Sleep': Color.LIGHT_GREY,
+          #  'Deplacement': 
+          #  'Journaling':
           }
 
 def main():
