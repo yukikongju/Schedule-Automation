@@ -198,7 +198,8 @@ def generate_daily_schedule():
     num_slides_preparation_per_lecture = 1
     num_lecture_review_per_lecture = 1
 
-    # referencing first sheet
+    # get reference for first worksheet
+    ws = ws.active 
 
     pass
 
