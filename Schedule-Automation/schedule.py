@@ -211,8 +211,10 @@ def generate_daily_schedule():
     # create lectures list to watch in order
     ordered_lectures_list = get_ordered_lecture_list()
 
-    # get reference for first worksheet
+    # get reference for first worksheet and rename it
     ws = wb.worksheets[0]
+    ws.title = "Daily Schedule"
+
 
     # create week days column
     day_row = 6
@@ -243,9 +245,25 @@ def get_ordered_lecture_list():
     ordered_list = []
 
     # TODO: retrieve the lectures to watch in order
+    #  for course_index, course in enumerate(courses_list):
+    lecture_index = 0
+    while len(courses_lectures_list) != 0:
+        # add lectures to list until there are none left
+        for i, course in enumerate(courses_lectures_list):
+            if len(course) != 0:
+            #  if len(courses_lectures_list[i]) != 0:
+                #  ordered_list.append(course[lecture_index])
+                #  print(courses_lectures_list[i][0])
+                ordered_list.append(courses_lectures_list[i].pop(0))
+                #  print(course)
+            else: # we pop the empty list
+                #  print(i)
+                #  courses_list.pop(i)
+                courses_lectures_list.pop(i)
+        lecture_index += 1
     
-
-
+    #  for lecture in ordered_list:
+    #      print(lecture)
 
     return ordered_list
 
