@@ -20,7 +20,6 @@
 import glob
 import openpyxl
 import os
-#  import pandas as pd
 
 from openpyxl import Workbook
 from openpyxl.formatting.rule import ColorScaleRule, CellIsRule, FormulaRule
@@ -61,9 +60,15 @@ courses_lectures_list = [] # a list of the lecture list for all courses
 
 def get_courses_material():
     """ Get a list for all courses
-        OUTPUT:
+
+        Implementation:
+            - Open all files in the material directory and save courses name as
+              one list and the lectures for each courses as another one
+
+        Parameters:
             - courses_list = ['course1', 'course2']
             - courses_lectures_list = [['course1_lecture1'],['course2_lecture1']]
+
     """
     os.chdir(material_path) # change directory
     for text_doc in glob.glob("*.txt"):
@@ -80,12 +85,15 @@ def get_courses_material():
 
 
 def generate_courses_tab():
-    """ Create the tab 
-            1. Retrieve the text files with the lecture
-                a. Retrieve everything in the directory?
-            2. Separate content by week
-                a. pop lecture from list when it is placed
+    """ Creating weekly tabs for all courses 
         
+        Implementation:
+            - From the courses_list and the courses_lectures_list, generate
+              a weekly schedule for all courses by
+                    1. Add columns titles
+                    2. Schedule lectures by week according to need
+                    3. Add conditional formatting for all lectures row
+
     """
     for j, course_lectures in enumerate(courses_lectures_list):
         # create the tab with course name
@@ -169,6 +177,29 @@ def generate_courses_tab():
 
 
 def generate_daily_schedule():
+    """ Generating Daily Schedule from all the course
+        
+        Notes:
+            a. Each lecture has 1 slide preparation and 1 review
+            b. Each chapter has one TP associated with it
+            c. Some days may be unavailable for learning
+
+        Implementation:
+            - Traverse first lecture for all courses before scheduling another
+              one
+
+        Parameters:
+            - is_weekend_available (bool): True if user can study on weekends
+
+    """
+    # setting up schedule parameters
+    is_weekend_available = False
+    num_tp_per_lecture = 1
+    num_slides_preparation_per_lecture = 1
+    num_lecture_review_per_lecture = 1
+
+    # referencing first sheet
+
     pass
 
 
