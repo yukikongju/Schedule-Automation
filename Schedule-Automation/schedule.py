@@ -35,9 +35,9 @@ wb = Workbook() # init workbook
 
 material_path = "courses_material"
 
-slides_per_day = 2 # number of slides to go through per day
-lectures_per_day = 2 # number of lecture to attend per day
-exercices_per_day = 1 # number of exercices to do per day
+num_slides_per_day = 2 # number of slides to go through per day
+num_lectures_per_day = 2 # number of lecture to attend per day
+num_exercices_per_day = 1 # number of exercices to do per day
 
 class_lectures_per_week = 2 # num of lecture for a class in a week
 class_exercices_per_week = 1
@@ -211,25 +211,77 @@ def generate_daily_schedule():
     # create lectures list to watch in order
     ordered_lectures_list = get_ordered_lecture_list()
 
+    # create slides for lecture list
+    slides_list = ordered_lectures_list.copy()
+
     # get reference for first worksheet and rename it
     ws = wb.worksheets[0]
     ws.title = "Daily Schedule"
 
 
-    # create week days column
-    day_row = 6
-    start_day_column_index = 2 # days of week start at B
-    for i, day in enumerate(DAYS_OF_WEEK_FRENCH):
-        column = start_day_column_index + i
-        _cell = ws.cell(row = day_row, column = column, value = day)
-        ws.column_dimensions[get_column_letter(column + 1)].width =\
-                lecture_col_width
-
     # TODO: Create week
+    week_count = 1
+    row_index = 6 # begin to draw at row 6 
+    start_day_column_index = 3 # days of week start at B
+    #  while len(ordered_lectures_list) != 0 or len(slides_list) !=0:
+    while len(ordered_lectures_list) != 0:
+        # create week row
+        _week = ws.cell(column = 1, row = row_index, value = f'Week {week_count}')
+        ws.merge_cells(start_row = row_index, start_column = 1, end_column
+                = 15, end_row = row_index)
+        _week.fill = PatternFill(fgColor= GREEN, fill_type= "solid")
+        # TODO: ADD date to week
+        row_index += 2 # skip a line
 
-    # TODO: add lecture and slides row title
+        # create week days column
+        for i, day in enumerate(DAYS_OF_WEEK_FRENCH):
+            column = start_day_column_index + i
+            _cell = ws.cell(row = row_index, column = column, value = day)
+            ws.column_dimensions[get_column_letter(column)].width =\
+                    lecture_col_width
+        row_index += 1
         
-    # TODO: 
+        # saving row index for backtracking
+        start_lecture_index = row_index # to reset row index after each iter
+        start_slides_index = start_lecture_index + num_lectures_per_day
+
+        # TODO: First Column TITLE name
+        # Lecture 1 to n
+        for i in range(num_lectures_per_day):
+            ws.cell(column = 1, row = row_index, value = f'Lecture {i+1}')
+            row_index += 1
+        # Slides 1 to n
+        for i in range(num_slides_per_day):
+            ws.cell(column = 1, row = row_index, value = f'Slide {i+1}')
+            row_index += 1
+
+
+        # TODO: Schedule lectures for the week
+        lecture_days_indexes = [1,2,3,4,5] # lectures from monday to friday only
+        for col, day in enumerate(lecture_days_indexes):
+            for j in range(num_lectures_per_day):
+                if len(ordered_lectures_list) != 0 :
+                    ws.cell(column = start_day_column_index + col, 
+                            row = start_lecture_index + j, 
+                            value = ordered_lectures_list.pop(0))
+                else:
+                    break 
+
+        # TODO: schedule slides for the week
+        slide_days_indexes = [1,2,3,4,5,7] # samedi is break from slides prep
+        for col, day in enumerate(slide_days_indexes):
+            for j in range(num_slides_per_day):
+                if len(slides_list) != 0 :
+                    ws.cell(column = start_day_column_index + col, 
+                            row = start_slides_index + j, 
+                            value = slides_list.pop(0))
+                else:
+                    break 
+
+
+        # increment variables
+        week_count += 1
+        row_index += 1
 
 
     pass
