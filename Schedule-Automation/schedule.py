@@ -40,8 +40,6 @@ class_exercices_per_week = 1
 
 title_row = 6
 start_row = title_row + 2
-#  start_col_week = 'A'
-#  end_col_week = 'T'
 
 lecture_col_width = 25
 col_title_width = 15
@@ -58,11 +56,14 @@ col_titles = ['Slides',             # if lecture has been prepared
               'Review'              # if lecture review has been done
               ]
 
-courses_list = []
+courses_list = [] # a list of the course name
+courses_lectures_list = [] # a list of the lecture list for all courses
 
 def get_courses_material():
     """ Get a list for all courses
-        Output: a list of ['COURSE NAME', 'lecture 1', 'lecture 2']
+        OUTPUT:
+            - courses_list = ['course1', 'course2']
+            - courses_lectures_list = [['course1_lecture1'],['course2_lecture1']]
     """
     os.chdir(material_path) # change directory
     for text_doc in glob.glob("*.txt"):
@@ -74,12 +75,8 @@ def get_courses_material():
             lectures_list = [line.strip() for line in f]
         f.close()
         # put data into dataframe
-        lectures_list.insert(0, course_name)
-        courses_list.append([lecture for lecture in lectures_list])
-    # print course list
-    #  for course in courses_list:
-    #      print(course)
-
+        courses_list.append(course_name) 
+        courses_lectures_list.append([lecture for lecture in lectures_list])
 
 
 def generate_courses_tab():
@@ -90,20 +87,10 @@ def generate_courses_tab():
                 a. pop lecture from list when it is placed
         
     """
-    #  print(os.getcwd())
-    # TODO: refractor function from courses_list instead
-    os.chdir(material_path)
-    for text_doc in glob.glob("*.txt"):
+    for j, course_lectures in enumerate(courses_lectures_list):
         # create the tab with course name
-        course_name = text_doc.replace(".txt", "")
+        course_name = courses_list[j] # course name is saved at index 0
         ws = wb.create_sheet(course_name)
-
-        # retrieve course material from txt file
-        #  print(text_doc)
-        lectures_list = []
-        with open(text_doc) as f:
-            lectures_list = [line.strip() for line in f]
-        f.close()
 
         # adding columns titles
         for i, title in enumerate(col_titles):
@@ -118,12 +105,12 @@ def generate_courses_tab():
         ws.column_dimensions['A'].width = lecture_col_width # adjust legend col width
 
         week_index = 1 # keeping track of the column
-        #  row_index = 0 # keeping track of the row
         row_index = start_row # start at gap
         lecture_index = 0
         lecture_col = 1 # column 'A'
+
         # separe lecture by weeks
-        while len(lectures_list) != 0:
+        for lecture in course_lectures:
             # create new week
             if lecture_index % (class_lectures_per_week) == 0:
                 row_index += 1
@@ -143,7 +130,7 @@ def generate_courses_tab():
 
             # add lecture
             ws.cell(column = lecture_col, row = row_index).\
-                    value = lectures_list.pop(0)
+                    value = lecture
 
             yellow_fill = PatternFill(bgColor = YELLOW)
             pending_rule_style = DifferentialStyle(fill = yellow_fill)
@@ -194,11 +181,11 @@ if __name__ == "__main__":
     get_courses_material()
 
     # generate weekly tabs for all courses in the directory
-    #  generate_courses_tab()
+    generate_courses_tab()
     
     # generate daily schedule
     #  generate_daily_schedule()
 
     # TODO: change file path and name
     #  wb.save(os.path.join(path, 'Schedule - Test.xlsx'))
-    #  wb.save('Schedule - Test.xlsx')
+    wb.save('Schedule - Test.xlsx')
