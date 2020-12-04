@@ -27,7 +27,7 @@ from openpyxl.styles import colors
 from openpyxl.utils import get_column_letter
 
 from utils import DAYS_OF_WEEK_FRENCH
-#  from utils import COLOR.*
+from utils import Color
 
 start_day = '' # time at which we start our day 
 end_day = '' # time at which we end our time increment
@@ -40,18 +40,20 @@ path = "C:/Users/emuli/OneDrive - Universite de Montreal/Bac-Maths-Info/Organiza
 
 #  template_file = "Time Tracker - Template.xlsx"
 
-legend = {'Active Recall': '#ff0000', 
-          'TPs and Exercices': '#ff0000',
-          #  'Slides':'#151',
-          #  'Lecture Review':'#134',
-          #  'Unanswered Questions':'#346',
-          #  'Coding':'#236',
-          #  'Sleep':'#345',
-          #  'Management': '#456',
-          #  'Wasted Time': '#ff0000',
-          #  'Chores + Toilettes': '#876543',
-          #  'Eating': '#324',
-          'Training':'#0999ff'}
+legend = {'Active Recall': Color.GREEN, 
+          'TPs and Exercices': Color.EMERAUDE,
+          'Slides': Color.TURQUOISE,
+          'Lecture Review': Color.CYAN,
+          'Unanswered Questions': Color.BLUE_CLEAR,
+          'Coding': Color.BLUE_SKY,
+          'Management': Color.INDIGO,
+          'Training': Color.VIOLET,
+          'Chores + Toilettes': Color.CLEMENTINE,
+          'Eating': Color.ORANGE,
+          'Wasted Time': Color.RED,
+          'Social': Color.YELLOW,
+          'Sleep': Color.GREY,
+          }
 
 def main():
     """ Create Time Tracker Excel Spreadsheet
