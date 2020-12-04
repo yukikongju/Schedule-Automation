@@ -43,7 +43,9 @@ end_col_week = 'T'
 lecture_col_width = 25
 col_title_width = 15
 
-GREY = openpyxl.styles.colors.Color(rgb = "808080")
+
+GREY = "696969"
+PASTEL = "5f9ea0"
 
 col_titles = ['Slides',             # if lecture has been prepared
               'Lecture',            # if lecture has been attended
@@ -83,64 +85,50 @@ def main():
                     value = title   # add title
             column_letter = get_column_letter(column_index)
             ws.column_dimensions[f'{column_letter}'].width =\
-                    col_title_width
-            #  ws.column_dimensions[start_index_title + i].width =\
-            #          col_title_width
-
+                   col_title_width
 
         # change lecture column size
         ws.column_dimensions['A'].width = lecture_col_width # adjust legend col width
 
         week_index = 1 # keeping track of the column
-        row_index = 0 # keeping track of the row
-        #  lecture_index = 0
+        #  row_index = 0 # keeping track of the row
+        row_index = start_row # start at gap
+        lecture_index = 0
         lecture_col = 1 # column 'A'
         # separe lecture by weeks
         while len(lectures_list) != 0:
             # create new week
-            if row_index % class_lectures_per_week == 0:
+            if lecture_index % (class_lectures_per_week) == 0:
                 row_index += 1
-                ws.cell(column = lecture_col, row = start_row + row_index).\
-                        value = "NEW WEEK"
-                week_index += 1
-                row_index += 1
+                # name week
+                ws.cell(column = lecture_col, row = row_index).\
+                        value = f"Week {week_index}"
+                # set background color
+                column_letter = get_column_letter(lecture_col)
+                ws[f'{column_letter}{row_index}'].fill = PatternFill(
+                        fgColor= GREY, fill_type="solid")
+                # merge row
+                ws.merge_cells(f'{column_letter}{row_index}:T{row_index}')
 
-            ws.cell(column = lecture_col, row = start_row + row_index).\
-                    value = lectures_list.pop()
+                # increment
+                week_index += 1
+                row_index += 1 # skip a line
+
+            # add lecture
+            ws.cell(column = lecture_col, row = row_index).\
+                    value = lectures_list.pop(0)
+
+            # TODO: add pending value to column
+
+            # increment index
+            lecture_index += 1
             row_index += 1
-            #  lecture_index += 1
 
             # put the exercices?
 
             # 
     #  wb.save(os.path.join(path, 'Schedule - Test.xlsx'))
     wb.save('Schedule - Test.xlsx')
-
-
-
-        
-        
-
-
-
-
-        #  while len(lectures_list) is not 0:
-        #      ws.merge_cells(start_row = start_row + i, start_column = 1,
-        #              end_column = 22, end_row = start_row + 1)
-
-        #      background_color = openpyxl.styles.colors.Color(rgb = GREY)
-        #      fill_color = openpyxl.styles.fills.PatternFill(patternType='solid',\
-        #              fgColor=background_color)
-        #      #  column_letter = get_column_letter()
-        #      ws[f'K{6+i}'].fill = fill_color
-
-
-
-
-
-    
-
-
 
 
 
