@@ -16,17 +16,15 @@
     3. Create weekly stats with streamlit
 
 """
+import calendar
+import datetime
 import openpyxl
 import os
 
-
 from openpyxl import Workbook
-
 from openpyxl.styles import Color, PatternFill, Font, Border
 from openpyxl.styles import colors
 from openpyxl.cell import Cell
-
-
 
 legend = {'Active Recall': '#ff0000', 
           'TPs and Exercices': '#ff0000',
@@ -44,10 +42,16 @@ legend = {'Active Recall': '#ff0000',
 days_of_week = ['Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi',
         'Dimanche']
 
-row_title = 4
+start_day = '' # time at which we start our day 
+end_day = '' # time at which we end our time increment
+
+row_title = 4 # gap for the row title
+column_width = 25
 
 # path where the file will be saved
 path = "C:/Users/emuli/OneDrive - Universite de Montreal/Bac-Maths-Info/Organization Documents/Time Tracker"
+
+#  template_file = "Time Tracker - Template.xlsx"
 
 
 def main():
@@ -63,19 +67,25 @@ def main():
         for i, tag in enumerate(legend):
             #  line = 6+i #6 is the cell where the legend begins
             ws[f'K{6+i}'] = f"{tag}"  
-            #  background_color = openpyxl.styles.colors.Color(rgb = '00FF000')
-            #  print(legend[tag][1:])
             background_color = openpyxl.styles.colors.Color(rgb = legend[tag][1:])
             fill_color = openpyxl.styles.fills.PatternFill(patternType='solid',\
                     fgColor=background_color)
             ws[f'K{6+i}'].fill = fill_color
+            
+        # Adjust columm width
+        ws.column_dimensions['K'].width = column_width # adjust legend col width
+        ws.column_dimensions['B:H'] = column_width # adjust days column width
 
         # Add days of week
         for i, day in enumerate(days_of_week):
             _ = ws.cell(column = i + 2, row = row_title, value = day)
 
+        # Add dates above days of week
         
         # Add timestamp
+
+
+
         
     # rename workbook - Month Year
 
