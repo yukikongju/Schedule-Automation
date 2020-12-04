@@ -83,16 +83,17 @@ def get_courses_material():
 
 
 def generate_courses_tab():
+    """ Create the tab 
+            1. Retrieve the text files with the lecture
+                a. Retrieve everything in the directory?
+            2. Separate content by week
+                a. pop lecture from list when it is placed
+        
+    """
     #  print(os.getcwd())
+    # TODO: refractor function from courses_list instead
     os.chdir(material_path)
     for text_doc in glob.glob("*.txt"):
-        """ Create the tab 
-                1. Retrieve the text files with the lecture
-                    a. Retrieve everything in the directory?
-                2. Separate content by week
-                    a. pop lecture from list when it is placed
-            
-        """
         # create the tab with course name
         course_name = text_doc.replace(".txt", "")
         ws = wb.create_sheet(course_name)
