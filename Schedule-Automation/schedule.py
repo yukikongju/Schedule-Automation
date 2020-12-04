@@ -17,19 +17,19 @@
 
 """
 
+import glob
 import openpyxl
+import os
+#  import pandas as pd
+
 from openpyxl import Workbook
-from openpyxl.styles import Color, PatternFill, Font, Border
-from openpyxl.styles.differential import DifferentialStyle
 from openpyxl.formatting.rule import ColorScaleRule, CellIsRule, FormulaRule
 from openpyxl.formatting.rule import Rule
+from openpyxl.styles import Color, PatternFill, Font, Border
+from openpyxl.styles.differential import DifferentialStyle
 from openpyxl.utils import get_column_letter
-import glob
-import os
 
 material_path = "courses_material"
-#  courses_files = ['courses.txt']
-
 
 slides_per_day = 2 # number of slides to go through per day
 lectures_per_day = 2 # number of lecture to attend per day
@@ -39,9 +39,9 @@ class_lectures_per_week = 2 # num of lecture for a class in a week
 class_exercices_per_week = 1
 
 title_row = 6
-start_row = 8
-start_col_week = 'A'
-end_col_week = 'T'
+start_row = title_row + 2
+#  start_col_week = 'A'
+#  end_col_week = 'T'
 
 lecture_col_width = 25
 col_title_width = 15
@@ -58,10 +58,31 @@ col_titles = ['Slides',             # if lecture has been prepared
               'Review'              # if lecture review has been done
               ]
 
-def main():
-    wb = Workbook() # init workbook
-    #  ws = ws.active # get reference for first worksheet
+courses_list = []
 
+def get_courses_material():
+    """ Get a list for all courses
+        Output: a list of ['COURSE NAME', 'lecture 1', 'lecture 2']
+    """
+    os.chdir(material_path) # change directory
+    for text_doc in glob.glob("*.txt"):
+        # get course name
+        course_name = text_doc.replace(".txt", "")
+        # get lecture list
+        lectures_list = []
+        with open(text_doc) as f:
+            lectures_list = [line.strip() for line in f]
+        f.close()
+        # put data into dataframe
+        lectures_list.insert(0, course_name)
+        courses_list.append([lecture for lecture in lectures_list])
+    # print course list
+    #  for course in courses_list:
+    #      print(course)
+
+
+
+def generate_courses_tab():
     #  print(os.getcwd())
     os.chdir(material_path)
     for text_doc in glob.glob("*.txt"):
@@ -73,7 +94,7 @@ def main():
             
         """
         # create the tab with course name
-        course_name = text_doc
+        course_name = text_doc.replace(".txt", "")
         ws = wb.create_sheet(course_name)
 
         # retrieve course material from txt file
@@ -152,19 +173,31 @@ def main():
                 ws.conditional_formatting.add(f'{column_letter}{row_index}',
                         completed_rule)
 
-
             # increment index
             lecture_index += 1
             row_index += 1
 
             # put the exercices?
 
-            # 
-    #  wb.save(os.path.join(path, 'Schedule - Test.xlsx'))
-    wb.save('Schedule - Test.xlsx')
 
+def generate_daily_schedule():
+    pass
 
 
 
 if __name__ == "__main__":
-    main()
+    wb = Workbook() # init workbook
+    #  ws = ws.active # get reference for first worksheet
+    
+    # get courses content from directory
+    get_courses_material()
+
+    # generate weekly tabs for all courses in the directory
+    #  generate_courses_tab()
+    
+    # generate daily schedule
+    #  generate_daily_schedule()
+
+    # TODO: change file path and name
+    #  wb.save(os.path.join(path, 'Schedule - Test.xlsx'))
+    #  wb.save('Schedule - Test.xlsx')
