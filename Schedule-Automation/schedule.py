@@ -25,7 +25,8 @@ import glob
 import os
 
 material_path = "courses_material"
-courses_files = ['courses.txt']
+#  courses_files = ['courses.txt']
+
 
 slides_per_day = 2 # number of slides to go through per day
 lectures_per_day = 2 # number of lecture to attend per day
@@ -36,16 +37,23 @@ class_exercices_per_week = 1
 
 title_row = 6
 start_row = 8
-start_col_title = 'A'
-end_col_title = 'T'
+start_col_week = 'A'
+end_col_week = 'T'
+
+lecture_col_width = 25
+col_title_width = 15
 
 GREY = openpyxl.styles.colors.Color(rgb = "808080")
+
+col_titles = ['Slides',             # if lecture has been prepared
+              'Lecture',            # if lecture has been attended
+              'Review'              # if lecture review has been done
+              ]
 
 def main():
     wb = Workbook() # init workbook
     #  ws = ws.active # get reference for first worksheet
 
-    
     #  print(os.getcwd())
     os.chdir(material_path)
     for text_doc in glob.glob("*.txt"):
@@ -64,17 +72,31 @@ def main():
         #  print(text_doc)
         lectures_list = []
         with open(text_doc) as f:
-            #  lectures_list = [[line.strip()] for line in f]
             lectures_list = [line.strip() for line in f]
         f.close()
 
+        # adding columns titles
+        start_index_title = 3 # titles column starts at C
+        for i, title in enumerate(col_titles):
+            column_index = start_index_title + i
+            ws.cell(column = column_index, row = title_row).\
+                    value = title   # add title
+            column_letter = get_column_letter(column_index)
+            ws.column_dimensions[f'{column_letter}'].width =\
+                    col_title_width
+            #  ws.column_dimensions[start_index_title + i].width =\
+            #          col_title_width
+
+
+        # change lecture column size
+        ws.column_dimensions['A'].width = lecture_col_width # adjust legend col width
+
         week_index = 1 # keeping track of the column
         row_index = 0 # keeping track of the row
-        lecture_index = 0
+        #  lecture_index = 0
         lecture_col = 1 # column 'A'
         # separe lecture by weeks
         while len(lectures_list) != 0:
-        #  while lecture_index < len(lectures_list):
             # create new week
             if row_index % class_lectures_per_week == 0:
                 row_index += 1
@@ -86,7 +108,7 @@ def main():
             ws.cell(column = lecture_col, row = start_row + row_index).\
                     value = lectures_list.pop()
             row_index += 1
-            lecture_index += 1
+            #  lecture_index += 1
 
             # put the exercices?
 
