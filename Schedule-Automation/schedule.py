@@ -28,6 +28,11 @@ from openpyxl.styles import Color, PatternFill, Font, Border
 from openpyxl.styles.differential import DifferentialStyle
 from openpyxl.utils import get_column_letter
 
+#  from . import utils #DAYS_OF_WEEK_FRENCH
+
+
+wb = Workbook() # init workbook
+
 material_path = "courses_material"
 
 slides_per_day = 2 # number of slides to go through per day
@@ -42,6 +47,9 @@ start_row = title_row + 2
 
 lecture_col_width = 25
 col_title_width = 15
+
+DAYS_OF_WEEK_FRENCH = ['Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi',
+        'Dimanche']
 
 start_index_title = 3 # titles column starts at C
 
@@ -187,6 +195,8 @@ def generate_daily_schedule():
         Implementation:
             - Traverse first lecture for all courses before scheduling another
               one
+            - create two temporary list: one for the lectures, one for the
+              slides, and fill the list by popping the lecture form the list
 
         Parameters:
             - is_weekend_available (bool): True if user can study on weekends
@@ -198,15 +208,51 @@ def generate_daily_schedule():
     num_slides_preparation_per_lecture = 1
     num_lecture_review_per_lecture = 1
 
+    # create lectures list to watch in order
+    ordered_lectures_list = get_ordered_lecture_list()
+
     # get reference for first worksheet
-    ws = ws.active 
+    ws = wb.worksheets[0]
+
+    # create week days column
+    day_row = 6
+    start_day_column_index = 2 # days of week start at B
+    for i, day in enumerate(DAYS_OF_WEEK_FRENCH):
+        column = start_day_column_index + i
+        _cell = ws.cell(row = day_row, column = column, value = day)
+        ws.column_dimensions[get_column_letter(column + 1)].width =\
+                lecture_col_width
+
+    # TODO: Create week
+
+    # TODO: add lecture and slides row title
+        
+    # TODO: 
+
 
     pass
+
+def get_ordered_lecture_list():
+    """ Get a list of the order to watch the lecture for all classes
+        
+        Implementation:
+            - Traverse first lecture for all courses before adding the second
+              one
+    """
+    # initalize the list
+    ordered_list = []
+
+    # TODO: retrieve the lectures to watch in order
+    
+
+
+
+    return ordered_list
 
 
 
 if __name__ == "__main__":
-    wb = Workbook() # init workbook
+    #  wb = Workbook() # init workbook
     #  ws = ws.active # get reference for first worksheet
     
     # get courses content from directory
@@ -216,7 +262,7 @@ if __name__ == "__main__":
     generate_courses_tab()
     
     # generate daily schedule
-    #  generate_daily_schedule()
+    generate_daily_schedule()
 
     # TODO: change file path and name
     #  wb.save(os.path.join(path, 'Schedule - Test.xlsx'))
