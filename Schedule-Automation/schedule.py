@@ -136,7 +136,7 @@ def generate_courses_tab():
                 # set background color
                 column_letter = get_column_letter(lecture_col)
                 ws[f'{column_letter}{row_index}'].fill = PatternFill(
-                        fgColor= GREY, fill_type="solid")
+                        fgColor= PASTEL, fill_type="solid")
                 # merge row
                 ws.merge_cells(f'{column_letter}{row_index}:T{row_index}')
 
