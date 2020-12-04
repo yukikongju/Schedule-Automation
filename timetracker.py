@@ -24,10 +24,21 @@ import os
 from openpyxl import Workbook
 from openpyxl.styles import Color, PatternFill, Font, Border
 from openpyxl.styles import colors
-#  from openpyxl.cell import Cell
 from openpyxl.utils import get_column_letter
 
 from utils import DAYS_OF_WEEK_FRENCH
+#  from utils import COLOR.*
+
+start_day = '' # time at which we start our day 
+end_day = '' # time at which we end our time increment
+
+row_title = 4 # gap for the row title
+column_width = 25
+
+# path where the file will be saved
+path = "C:/Users/emuli/OneDrive - Universite de Montreal/Bac-Maths-Info/Organization Documents/Time Tracker"
+
+#  template_file = "Time Tracker - Template.xlsx"
 
 legend = {'Active Recall': '#ff0000', 
           'TPs and Exercices': '#ff0000',
@@ -42,22 +53,17 @@ legend = {'Active Recall': '#ff0000',
           #  'Eating': '#324',
           'Training':'#0999ff'}
 
-days_of_week = ['Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi',
-        'Dimanche']
-
-start_day = '' # time at which we start our day 
-end_day = '' # time at which we end our time increment
-
-row_title = 4 # gap for the row title
-column_width = 25
-
-# path where the file will be saved
-path = "C:/Users/emuli/OneDrive - Universite de Montreal/Bac-Maths-Info/Organization Documents/Time Tracker"
-
-#  template_file = "Time Tracker - Template.xlsx"
-
-
 def main():
+    """ Create Time Tracker Excel Spreadsheet
+
+        Implementation:
+            1. Add legend to the table
+            2. Add days of week as columns
+            3. Add timestamp as 15 minutes increment
+            4. Add date above days of week
+            5. Create a stats sheet for weekly-monthly schedule
+    
+    """
     wb = Workbook() # create workbook
     ws = wb.active
 
@@ -79,7 +85,7 @@ def main():
         ws.column_dimensions['K'].width = column_width # adjust legend col width
 
         #  Add days of week
-        for i, day in enumerate(days_of_week):
+        for i, day in enumerate(DAYS_OF_WEEK_FRENCH):
             column_index = i+2
             _ = ws.cell(column = column_index, row = row_title, value = day)
             column_letter = get_column_letter(column_index)
