@@ -51,6 +51,7 @@ start_index_title = 3 # titles column starts at C
 GREY = "696969"
 PASTEL = "5f9ea0"
 YELLOW = "fdfd96"
+GREEN = "03c03c"
 
 col_titles = ['Slides',             # if lecture has been prepared
               'Lecture',            # if lecture has been attended
@@ -122,11 +123,14 @@ def main():
             ws.cell(column = lecture_col, row = row_index).\
                     value = lectures_list.pop(0)
 
-            # TODO: add pending value to column
             yellow_fill = PatternFill(bgColor = YELLOW)
             pending_rule_style = DifferentialStyle(fill = yellow_fill)
+            green_fill = PatternFill(bgColor = GREEN)
+            completed_rule_style = DifferentialStyle(fill = green_fill)
 
             for i, _ in enumerate(col_titles):
+
+                # add pending value to column
                 column_index = start_index_title + i
                 ws.cell(column = column_index, row = row_index).\
                         value = "Pending"  
@@ -139,9 +143,15 @@ def main():
                 ws.conditional_formatting.add(f'{column_letter}{row_index}',
                         pending_rule)
 
+                # add conditional formating to make date green
+                completed_rule = Rule(type = "containsText",
+                        operator = "containsText", text = "*",
+                        dxf = completed_rule_style)
+                completed_rule.formula =\
+                    [f'NOT(ISERROR(SEARCH("*",{column_letter}{row_index})))']
+                ws.conditional_formatting.add(f'{column_letter}{row_index}',
+                        completed_rule)
 
-
-            # TODO: add conditional formating to make date green
 
             # increment index
             lecture_index += 1
