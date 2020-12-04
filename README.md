@@ -17,7 +17,7 @@ I need.
 
 * openpyxl: excel module
 * streamlit: view weekly-monthly stats
-* 
+* selenium: create a bot
 
 ## Ressources
 

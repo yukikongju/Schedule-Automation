@@ -42,14 +42,22 @@ num_exercices_per_day = 1 # number of exercices to do per day
 class_lectures_per_week = 2 # num of lecture for a class in a week
 class_exercices_per_week = 1
 
-title_row = 6
+DAYS_OF_WEEK_FRENCH = ['Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi',
+        'Dimanche']
+
+LINKS_CELLS = {'Slides Directory':'B1',
+        'Notes de Cours One Note': 'B2',
+        'Exercices Spreadshit': 'B3',
+        'Table des Matieres': 'B4'
+         }
+
+
+
+title_row = len(LINK_TITLES) + 2
 start_row = title_row + 2
 
 lecture_col_width = 25
 col_title_width = 15
-
-DAYS_OF_WEEK_FRENCH = ['Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi',
-        'Dimanche']
 
 start_index_title = 3 # titles column starts at C
 
@@ -107,6 +115,10 @@ def generate_courses_tab():
         # create the tab with course name
         course_name = courses_list[j] # course name is saved at index 0
         ws = wb.create_sheet(course_name)
+
+        # add title to links
+        for i, title in enumerate(LINK_TITLES):
+            ws.cell(column = 1, row = i + 1, value = title)
 
         # adding columns titles
         for i, title in enumerate(col_titles):
