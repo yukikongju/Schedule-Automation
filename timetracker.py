@@ -35,6 +35,8 @@ end_day = '' # time at which we end our time increment
 row_title = 4 # gap for the row title
 column_width = 25
 
+legend_column_index = 11 # column start at index K
+
 # path where the file will be saved
 path = "C:/Users/emuli/OneDrive - Universite de Montreal/Bac-Maths-Info/Organization Documents/Time Tracker"
 
@@ -43,16 +45,18 @@ path = "C:/Users/emuli/OneDrive - Universite de Montreal/Bac-Maths-Info/Organiza
 legend = {'Active Recall': Color.GREEN, 
           'TPs and Exercices': Color.EMERAUDE,
           'Slides': Color.TURQUOISE,
-          'Lecture Review': Color.CYAN,
+          #  'Lecture Review': Color.DARK_BLUE,
+          'Lecture Review': Color.LIME,
           'Unanswered Questions': Color.BLUE_CLEAR,
+          'Unanswered Questions': Color.CYAN,
           'Coding': Color.BLUE_SKY,
           'Management': Color.INDIGO,
           'Training': Color.VIOLET,
-          'Chores + Toilettes': Color.CLEMENTINE,
+          'Chores + Toilettes': Color.ORANGE,
           'Eating': Color.ORANGE,
           'Wasted Time': Color.RED,
           'Social': Color.YELLOW,
-          'Sleep': Color.GREY,
+          'Sleep': Color.LIGHT_GREY,
           }
 
 def main():
@@ -74,14 +78,14 @@ def main():
         ws = wb.create_sheet(f"Week {i+1}")
     
         # Add legend to tab
-        ws['K4'] = "Légende"
+        legend_column_letter = get_column_letter(legend_column_index)
+        ws[f'{legend_column_letter}{row_title}'] = "Légende"
         for i, tag in enumerate(legend):
-            line = 6+i #6 is the cell where the legend begins
-            ws[f'K{6+i}'] = f"{tag}"  
-            background_color = openpyxl.styles.colors.Color(rgb = legend[tag][1:])
-            fill_color = openpyxl.styles.fills.PatternFill(patternType='solid',\
-                    fgColor=background_color)
-            ws[f'K{6+i}'].fill = fill_color
+            row_index = row_title + i + 2 # gap of two
+            _cell = ws.cell(row = row_index, column = legend_column_index)
+            _cell.value = f"{tag}"
+            _cell.fill = PatternFill("solid", fgColor= legend[tag][1:])
+            _cell.font = Font(color = Color.WHITE[1:])
             
         #  Adjust columm width
         ws.column_dimensions['K'].width = column_width # adjust legend col width

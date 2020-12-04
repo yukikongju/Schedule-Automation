@@ -16,6 +16,7 @@ class Color:
     BLUE_SKY = "#00a2ff"
     BLUE_CLEAR = "#006aff"
     INDIGO = "#4b0082"
+    #  INDIGO = "#800080"
     PURPLE = "#800080"
     VIOLET = "#ee82ee"
     MAGENTA = "#ff00ff"
@@ -28,7 +29,19 @@ class Color:
     MEDIUM_GREY = "#6e6e6e"
     LIGHT_GREY = "#969696"
     GREY_WHITE = "#b8b8b8"
-    WHITE = "#d9d9d9"
+    WHITE_ISH = "#d9d9d9"
+    WHITE = "#ffffff"
+
+    #  YELLOW = "#eb984e"
+    #  ORANGE = "#f5b041"
+    #  RED = "#e74c3c"
+    #  VIOLET = "#af7ac5",
+    #  PURPLE = "#8e44ad"
+    #  BLUE_SKY = "#2980b9"
+    #  BLUE_CLEAR = "#3498db"
+    #  DARK_BLUE = "#004d99"
+    #  EMERAUDE = "#1abc9c"
+    #  TURQUOISE = "#58d68d"
 
 
 
