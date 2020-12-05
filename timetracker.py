@@ -26,9 +26,10 @@ import datetime
 import openpyxl
 import os
 
-from datetime import datetime
+from datetime import date, datetime, timedelta
 
 from openpyxl import Workbook
+from openpyxl.styles import Alignment
 from openpyxl.styles import Color, PatternFill, Font, Border
 from openpyxl.styles import colors
 from openpyxl.utils import get_column_letter
@@ -39,7 +40,8 @@ from utils import Color
 start_day = '' # time at which we start our day 
 end_day = '' # time at which we end our time increment
 
-row_title = 4 # gap for the row title
+row_date = 2
+row_title = row_date + 2 # gap for the row title
 column_width = 25
 
 legend_column_index = 11 # column start at index K
@@ -81,6 +83,9 @@ def main():
     """
     wb = Workbook() # create workbook
     ws = wb.active
+
+    # find the first monday of the month
+    start_date = get_month_first_monday()
     
     # generate week tab
     for i in range(4):
@@ -102,12 +107,17 @@ def main():
         #  Add days of week
         for i, day in enumerate(DAYS_OF_WEEK_FRENCH):
             column_index = i+2
-            _ = ws.cell(column = column_index, row = row_title, value = day)
+            _day = ws.cell(column = column_index, row = row_title, value = day)
+            _day.alignment = Alignment(horizontal = 'center')
             column_letter = get_column_letter(column_index)
             # adjust days column width
             ws.column_dimensions[f'{column_letter}'].width = column_width 
 
-        # TODO: Add dates above days of week
+            # TODO: Add dates above days of week
+            _date = ws.cell(column = column_index, row = row_date, value = start_date)
+            _date.alignment = Alignment(horizontal = 'center')
+            start_date += timedelta(days = 1)
+
         
         # TODO: Add timestamp
 
@@ -116,6 +126,19 @@ def main():
 
     # save file
     wb.save(os.path.join(path, f'Time Tracker - {get_month_year()}1.xlsx'))
+
+def get_month_first_monday():
+    """ Function that finds first monday of the current month
+    
+        RETURN: (date) 
+    """
+    this_month = datetime.now().month
+    this_year = datetime.now().year
+    first_day_of_month = date(this_year, this_month, 1)
+    first_monday = first_day_of_month + timedelta(
+            days =-first_day_of_month.weekday(), weeks = 1)
+    return first_monday
+
 
 def get_month_year():
     """ Function that retrieve this month date and year
