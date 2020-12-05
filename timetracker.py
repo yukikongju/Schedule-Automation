@@ -37,9 +37,6 @@ from openpyxl.utils import get_column_letter
 from utils import DAYS_OF_WEEK_FRENCH
 from utils import Color
 
-start_day = '' # time at which we start our day 
-end_day = '' # time at which we end our time increment
-
 row_date = 2
 row_title = row_date + 2 # gap for the row title
 column_width = 25
@@ -120,6 +117,23 @@ def main():
 
         
         # TODO: Add timestamp
+        dummy_year, dummy_month, dummy_day = 2020, 12, 1
+        START_DAY = datetime(dummy_year, dummy_month, dummy_day, 
+                7,30) # timetable starts at 7h30 AM 
+        END_DAY = datetime(dummy_year, dummy_month, dummy_day + 1, 
+                1, 30) # timetable ends at 1h30 AM
+        INCREMENT = timedelta(minutes = 15)
+        timestamp = START_DAY
+        num_increment = 1
+        ws.column_dimensions['A'].width = 12 # adjust legend col width
+        while timestamp < END_DAY:
+            row_index = row_title + num_increment
+            _timestamp = ws.cell(column = 1, row = row_index, 
+                    value = timestamp.strftime("%H:%M %p"))
+            timestamp += INCREMENT
+            num_increment += 1
+
+
 
 
     # rename workbook - Month Year
