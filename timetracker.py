@@ -15,11 +15,18 @@
     2. Generate the template with date and time
     3. Create weekly stats with streamlit
 
+    TODO:
+        - [ ] Fix Legend Color
+        - [ ] Add Timestamp with 15 minutes increment
+        - [ ] Add date above week days
+
 """
 import calendar
 import datetime
 import openpyxl
 import os
+
+from datetime import datetime
 
 from openpyxl import Workbook
 from openpyxl.styles import Color, PatternFill, Font, Border
@@ -74,7 +81,7 @@ def main():
     """
     wb = Workbook() # create workbook
     ws = wb.active
-
+    
     # generate week tab
     for i in range(4):
         ws = wb.create_sheet(f"Week {i+1}")
@@ -100,25 +107,24 @@ def main():
             # adjust days column width
             ws.column_dimensions[f'{column_letter}'].width = column_width 
 
-        # Add dates above days of week
+        # TODO: Add dates above days of week
         
-        # Add timestamp
+        # TODO: Add timestamp
 
 
-
-        
     # rename workbook - Month Year
 
     # save file
-    wb.save(os.path.join(path, 'Time Tracker - [Month Year].xlsx'))
+    wb.save(os.path.join(path, f'Time Tracker - {get_month_year()}1.xlsx'))
 
-
-
-
-
-
-
-
+def get_month_year():
+    """ Function that retrieve this month date and year
+        
+        RETURN: (date) December 2020
+    """
+    this_month = datetime.now().strftime("%B")
+    this_year = datetime.now().year
+    return f'{this_month} {this_year}'
 
 if __name__ == "__main__":
     main()
