@@ -47,13 +47,12 @@ DAYS_OF_WEEK_FRENCH = ['Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samed
 
 LINKS_CELLS = {'Slides Directory':'B1',
         'Notes de Cours One Note': 'B2',
-        'Exercices Spreadshit': 'B3',
+        'Exercices Spreadsheet': 'B3',
         'Table des Matieres': 'B4'
          }
 
-
-
-title_row = len(LINK_TITLES) + 2
+#  title_row = len(LINK_TITLES) + 2
+title_row = len(LINKS_CELLS) + 2
 start_row = title_row + 2
 
 lecture_col_width = 25
@@ -61,10 +60,15 @@ col_title_width = 15
 
 start_index_title = 3 # titles column starts at C
 
-GREY = "696969"
-PASTEL = "5f9ea0"
-YELLOW = "fdfd96"
-GREEN = "03c03c"
+#  GREY = "696969"
+GREY = "c1c1c1"
+#  PASTEL = "5f9ea0"
+#  YELLOW = "fdfd96"
+#  YELLOW = "ffcc00"
+YELLOW = "ffff33"
+#  GREEN = "03c03c"
+#  GREEN = "99cc00"
+GREEN = "adff2f"
 
 col_titles = ['Slides',             # if lecture has been prepared
               'Lecture',            # if lecture has been attended
@@ -117,8 +121,8 @@ def generate_courses_tab():
         ws = wb.create_sheet(course_name)
 
         # add title to links
-        for i, title in enumerate(LINK_TITLES):
-            ws.cell(column = 1, row = i + 1, value = title)
+        #  for i, title in enumerate(LINK_TITLES):
+        #      ws.cell(column = 1, row = i + 1, value = title)
 
         # adding columns titles
         for i, title in enumerate(col_titles):
@@ -148,7 +152,7 @@ def generate_courses_tab():
                 # set background color
                 column_letter = get_column_letter(lecture_col)
                 ws[f'{column_letter}{row_index}'].fill = PatternFill(
-                        fgColor= PASTEL, fill_type="solid")
+                        fgColor= GREY, fill_type="solid")
                 # merge row
                 ws.merge_cells(f'{column_letter}{row_index}:T{row_index}')
 
@@ -159,6 +163,8 @@ def generate_courses_tab():
             # add lecture
             ws.cell(column = lecture_col, row = row_index).\
                     value = lecture
+
+            # add exercices
 
             yellow_fill = PatternFill(bgColor = YELLOW)
             pending_rule_style = DifferentialStyle(fill = yellow_fill)
@@ -194,6 +200,8 @@ def generate_courses_tab():
             row_index += 1
 
             # put the exercices?
+
+
 
 
 def generate_daily_schedule():
@@ -241,7 +249,7 @@ def generate_daily_schedule():
         _week = ws.cell(column = 1, row = row_index, value = f'Week {week_count}')
         ws.merge_cells(start_row = row_index, start_column = 1, end_column
                 = 15, end_row = row_index)
-        _week.fill = PatternFill(fgColor= GREEN, fill_type= "solid")
+        _week.fill = PatternFill(fgColor = GREY, fill_type= "solid")
         # TODO: ADD date to week
         row_index += 2 # skip a line
 
@@ -280,7 +288,8 @@ def generate_daily_schedule():
                     break 
 
         # TODO: schedule slides for the week
-        slide_days_indexes = [1,2,3,4,5,7] # samedi is break from slides prep
+        #  slide_days_indexes = [1,2,3,4,5,7] # samedi is break from slides prep
+        slide_days_indexes = [1,2,3,4,5] # slides only on week days
         for col, day in enumerate(slide_days_indexes):
             for j in range(num_slides_per_day):
                 if len(slides_list) != 0 :
@@ -348,4 +357,6 @@ if __name__ == "__main__":
 
     # TODO: change file path and name
     #  wb.save(os.path.join(path, 'Schedule - Test.xlsx'))
-    wb.save('Schedule - Test.xlsx')
+    spreadsheet_name = "Schedule - Session 2.xlsx"
+    #  wb.save('Schedule - Test.xlsx')
+    wb.save(spreadsheet_name)
