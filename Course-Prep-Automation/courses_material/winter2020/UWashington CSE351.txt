@@ -1,0 +1,12 @@
+Chapitre 01 - Introduction
+Chapitre 02 - Memory and data representation
+Chapitre 03 - Number representation for integers and floats
+Chapitre 04 - Machine code and the C programming language
+Chapitre 05 - x86-64 assembly language
+Chapitre 06 - Procedures and stacks
+Chapitre 07 - Arrays and other data structures
+Chapitre 08 - Memory and caches
+Chapitre 09 - Operating system process model
+Chapitre 10 - Virtual memory
+Chapitre 11 - Memory allocation
+Chapitre 12 - Implementation of high-level languages

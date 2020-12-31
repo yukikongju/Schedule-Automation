@@ -1,0 +1,24 @@
+DATA STRUCTURE
+Lecture 1 - Abstract Data Type
+Lecture 2 - Big O Notation
+Lecture 3 - Dynamic and Static Array
+Lecture 4 - Linked List
+Lecture 5 - Stack
+Lecture 6 - Queue
+Lecture 7 - Priority Queue
+Lecture 8 - Union Find
+Lecture 9 - Binary Search
+Lecture 10 - Hash Table
+Lecture 11 - Fenwick Tree
+Lecture 12 - Longest Common Prefix
+Lecture 13 - Balanced Binary Tree
+Lecture 14 - AVL Tree
+GRAPH THEORY
+Lecture 15 - Intro to graph theory
+Lecture 16 - Shortest Path Algorithm
+Lecture 17 - Bridges and Articulation
+Lecture 18 - Strongly Connected Component
+Lecture 19 - Traveling Salesman
+Lecture 20 - Eulerian Path
+Lecture 21 - Minimum Spanning Trees
+Lecture 22 - Network Flow
