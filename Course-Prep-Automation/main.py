@@ -4,7 +4,7 @@
     
     Documents to generate:
         - [ ] Schedule - Session 2 (spreadsheet) : 
-        - [ ] Active Review - Session 2 (spreadsheet) : 
+        - [x] Active Review - Session 2 (spreadsheet) : 
         - [ ] TPs and Exercices - Session 2 (spreadsheet)
         - [r] Note de Cours - Session 2 (OneNote)
 
@@ -15,6 +15,7 @@ import openpyxl
 import os
 
 from active_recall import generate_active_recall_spreadsheet
+from schedule import generate_schedule_spreadsheet
 
 download_path = ""
 #  material_path = "courses_material"
@@ -26,7 +27,11 @@ def main():
     courses_lectures_list, courses_names = get_courses_material()
 
     # generate_active_recall_spreadsheet
-    generate_active_recall_spreadsheet(courses_lectures_list, courses_names,
+    #  generate_active_recall_spreadsheet(courses_lectures_list, courses_names,
+            #  session_name)
+
+    # generate schedule spreadsheet
+    generate_schedule_spreadsheet(courses_lectures_list, courses_names,
             session_name)
 
     pass

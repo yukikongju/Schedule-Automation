@@ -25,11 +25,7 @@ def generate_active_recall_spreadsheet(courses_lectures_list, courses_names,
 
     """
     wb = Workbook()
-    
 
-    print(courses_lectures_list)
-    print(courses_names)
-    
     for j, course in enumerate(courses_lectures_list):
         # create the worksheet
         course_name = courses_names[j]

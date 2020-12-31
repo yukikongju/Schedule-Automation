@@ -70,8 +70,22 @@ col_titles = ['Slides',             # if lecture has been prepared
               'Recall'              # if concept has been added to recall sheet
               ]
 
-courses_list = [] # a list of the course name
-courses_lectures_list = [] # a list of the lecture list for all courses
+#  courses_names = [] # a list of the course name
+#  courses_lectures_list = [] # a list of the lecture list for all courses
+
+def generate_schedule_spreadsheet(courses_lectures_list, courses_names,
+            session_name):
+    # generate weekly tabs for all courses in the directory
+    generate_courses_tab(courses_lectures_list, courses_names)
+    
+    # generate daily schedule
+    generate_daily_schedule(courses_lectures_list)
+
+    # TODO: change file path and name
+    #  wb.save(os.path.join(path, 'Schedule - Test.xlsx'))
+    spreadsheet_name = f"Schedule - {session_name}.xlsx"
+    wb.save(spreadsheet_name)
+    pass
 
 def get_courses_material():
     """ Get a list for all courses
@@ -81,7 +95,7 @@ def get_courses_material():
               one list and the lectures for each courses as another one
 
         Parameters:
-            - courses_list = ['course1', 'course2']
+            - courses_names = ['course1', 'course2']
             - courses_lectures_list = [['course1_lecture1'],['course2_lecture1']]
 
     """
@@ -95,15 +109,15 @@ def get_courses_material():
             lectures_list = [line.strip() for line in f]
         f.close()
         # put data into dataframe
-        courses_list.append(course_name) 
+        courses_names.append(course_name) 
         courses_lectures_list.append([lecture for lecture in lectures_list])
 
 
-def generate_courses_tab():
+def generate_courses_tab(courses_lectures_list, courses_names):
     """ Creating weekly tabs for all courses 
         
         Implementation:
-            - From the courses_list and the courses_lectures_list, generate
+            - From the courses_names and the courses_lectures_list, generate
               a weekly schedule for all courses by
                     1. Add columns titles
                     2. Schedule lectures by week according to need
@@ -112,7 +126,7 @@ def generate_courses_tab():
     """
     for j, course_lectures in enumerate(courses_lectures_list):
         # create the tab with course name
-        course_name = courses_list[j] # course name is saved at index 0
+        course_name = courses_names[j] # course name is saved at index 0
         ws = wb.create_sheet(course_name)
 
         # add title to links
@@ -201,10 +215,7 @@ def generate_courses_tab():
                         value = f"TP {week_index - 1}"
                 row_index += 1
 
-
-
-
-def generate_daily_schedule():
+def generate_daily_schedule(courses_lectures_list):
     """ Generating Daily Schedule from all the course
         
         Notes:
@@ -229,7 +240,7 @@ def generate_daily_schedule():
     num_lecture_review_per_lecture = 1
 
     # create lectures list to watch in order
-    ordered_lectures_list = get_ordered_lecture_list()
+    ordered_lectures_list = get_ordered_lecture_list(courses_lectures_list)
 
     # create slides for lecture list
     slides_list = ordered_lectures_list.copy()
@@ -306,7 +317,7 @@ def generate_daily_schedule():
 
     pass
 
-def get_ordered_lecture_list():
+def get_ordered_lecture_list(courses_lectures_list):
     """ Get a list of the order to watch the lecture for all classes
         
         Implementation:
@@ -317,32 +328,18 @@ def get_ordered_lecture_list():
     ordered_list = []
 
     # TODO: retrieve the lectures to watch in order
-    #  for course_index, course in enumerate(courses_list):
     lecture_index = 0
     while len(courses_lectures_list) != 0:
         # add lectures to list until there are none left
         for i, course in enumerate(courses_lectures_list):
             if len(course) != 0:
-            #  if len(courses_lectures_list[i]) != 0:
-                #  ordered_list.append(course[lecture_index])
-                #  print(courses_lectures_list[i][0])
                 ordered_list.append(courses_lectures_list[i].pop(0))
-                #  print(course)
             else: # we pop the empty list
-                #  print(i)
-                #  courses_list.pop(i)
                 courses_lectures_list.pop(i)
         lecture_index += 1
-    
-    #  for lecture in ordered_list:
-    #      print(lecture)
-
     return ordered_list
 
 if __name__ == "__main__":
-    #  wb = Workbook() # init workbook
-    #  ws = ws.active # get reference for first worksheet
-    
     # get courses content from directory
     get_courses_material()
 
@@ -355,5 +352,4 @@ if __name__ == "__main__":
     # TODO: change file path and name
     #  wb.save(os.path.join(path, 'Schedule - Test.xlsx'))
     spreadsheet_name = "Schedule - Session 2.xlsx"
-    #  wb.save('Schedule - Test.xlsx')
     wb.save(spreadsheet_name)
