@@ -14,14 +14,21 @@ import glob
 import openpyxl
 import os
 
+from active_recall import generate_active_recall_spreadsheet
+
 download_path = ""
-material_path = "courses_material"
+#  material_path = "courses_material"
+material_path = "courses_material/winter2020"
+session_name = "Winter 2020"
 
 def main():
     # get all lectures for each course
-    course_lectures_list = get_courses_material()
+    courses_lectures_list, courses_names = get_courses_material()
 
-    print(course_lectures_list)
+    # generate_active_recall_spreadsheet
+    generate_active_recall_spreadsheet(courses_lectures_list, courses_names,
+            session_name)
+
     pass
 
 def get_courses_material():
@@ -32,14 +39,14 @@ def get_courses_material():
               one list and the lectures for each courses as another one
 
         Parameters:
-            - courses_list = ['course1', 'course2']
+            - courses_names = ['course1', 'course2']
             - courses_lectures_list = [['course1_lecture1'],['course2_lecture1']]
         
         Return: void
         TODO: return courses list
 
     """
-    courses_list = [] # a list of the course name
+    courses_names = [] # a list of the course name
     courses_lectures_list = [] # a list of the lecture list for all courses
 
     os.chdir(material_path) # change directory
@@ -52,9 +59,9 @@ def get_courses_material():
             lectures_list = [line.strip() for line in f]
         f.close()
         # put data into dataframe
-        courses_list.append(course_name) 
+        courses_names.append(course_name) 
         courses_lectures_list.append([lecture for lecture in lectures_list])
-    return courses_lectures_list;
+    return courses_lectures_list, courses_names
 
 if __name__ == "__main__":
     main()
