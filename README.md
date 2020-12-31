@@ -46,12 +46,15 @@ a given semester, generate:
 	  - Lecture Review
 
 Schedule Spreadsheet Screenshot:
+
 ![Schedule](screenshots/schedule_v1.png)
 
-Active Review Spreadsheet Screenshot:
-![Active Review](screenshots/active_review_v1.png)
+Active Recall Spreadsheet Screenshot:
+
+![Active Recall](screenshots/active_recall_v1.png)
 
 OneNote Document Screenshot:
+
 ![OneNote Document](screenshots/onenote_v1.png)
 
 Pratique Spreadsheet:
