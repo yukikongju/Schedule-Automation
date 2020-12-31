@@ -1,17 +1,85 @@
 # Schedule-Automation
 
-## Motivation
+A script that automate my learning workflow by generating spreadsheet from
+a list of courses and lectures
 
-I want to automate my planning system using python to produce the excel sheet
-I need.
+## Table of Contents
 
-## Spreadsheet to Implement
+* [Prerequisites](#prerequisites)
+* [Features](#features)
+* [Usage](#usage)
+* [Links](#links)
+	* [Using the Schedule Spreadsheet to schedule tasks]
+	* [Using the Active Recall Spreasheet to retain information]
+	* [Using the spreadsheet to make weekly-daily todos]
+	* [Using the Time Blocking Spreadsheet with Pomodoro]
+* [Implementation](#implementation)
+* [Ressources](#ressources)
 
-- [ ] Time Tracker: script that create a new file each month
-- [ ] Schedule: given the the lecture and project list, produce a spreadsheet
-	  that indicates the course material that needs to be done for a given
-	  week.
-- [ ] Weekly-Daily Plan: [to do]
+## Prerequisites
+
+1. Clone the repository
+
+`` git clone https://github.com/yukikongju/Schedule-Automation ``
+
+2. Install the required dependencies
+
+`` pip install -r requirements.txt ``
+
+## Features
+
+### Generate Spreadsheets needed for semester
+
+Status: incomplete
+
+From a directory containing text files with lectures for each course for
+a given semester, generate:
+
+- [x] Schedule Spreadsheet: Generate a spreadsheet where each tab is the course
+	  content separated by week
+- [x] Active Recall Spreadsheet: Generate a Header for each lectures/chapter
+- [ ] Practice Spreadsheet: Generate a Header for all TPs
+- [ ] OneNote Document: Generate a OneNote Document where all courses is
+	  a section, and where the lectures contains the following subsections:
+	  - Slides Overview
+	  - Lecture Notes
+	  - Lecture Review
+
+Schedule Spreadsheet Screenshot:
+![Schedule](screenshots/schedule_v1.png)
+
+Active Review Spreadsheet Screenshot:
+![Active Review](screenshots/active_review_v1.png)
+
+OneNote Document Screenshot:
+![OneNote Document](screenshots/onenote_v1.png)
+
+Pratique Spreadsheet:
+[todo]
+
+### Generate Time Blocking Spreadsheet
+
+Status: Complete
+
+A time table with 15 minutes increments to monitor your daily tasks
+
+### Generate a Weekly-Daily Spreadsheet
+
+Status: uncertain
+
+
+## Usage
+
+[to do]
+
+## Implementation
+
+%% - [ ] Time Tracker: script that create a new file each month
+%% - [ ] Schedule: given the the lecture and project list, produce a spreadsheet
+%%       that indicates the course material that needs to be done for a given
+%%       week.
+%% - [ ] Weekly-Daily Plan: [to do]
+
 
 ## Modules
 
