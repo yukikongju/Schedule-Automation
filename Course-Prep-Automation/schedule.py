@@ -135,6 +135,7 @@ def generate_courses_tab():
         row_index = start_row # start at gap
         lecture_index = 0
         lecture_col = 1 # column 'A'
+        num_tp_per_week = 1
 
         # separe lecture by weeks
         for lecture in course_lectures:
@@ -159,8 +160,7 @@ def generate_courses_tab():
             ws.cell(column = lecture_col, row = row_index).\
                     value = lecture
 
-            # add exercices
-
+            # add conditional formatting
             yellow_fill = PatternFill(bgColor = YELLOW)
             pending_rule_style = DifferentialStyle(fill = yellow_fill)
             green_fill = PatternFill(bgColor = GREEN)
@@ -192,9 +192,14 @@ def generate_courses_tab():
 
             # increment index
             lecture_index += 1
-            row_index += 1
+            row_index += 1 # skip a line
 
             # put the exercices?
+            if lecture_index % (class_lectures_per_week) == 0:
+                row_index += 1
+                ws.cell(column = lecture_col, row = row_index).\
+                        value = f"TP {week_index - 1}"
+                row_index += 1
 
 
 
@@ -294,7 +299,6 @@ def generate_daily_schedule():
                 else:
                     break 
 
-
         # increment variables
         week_count += 1
         row_index += 1
@@ -334,8 +338,6 @@ def get_ordered_lecture_list():
     #      print(lecture)
 
     return ordered_list
-
-
 
 if __name__ == "__main__":
     #  wb = Workbook() # init workbook
