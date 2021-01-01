@@ -18,6 +18,7 @@ from openpyxl.styles.differential import DifferentialStyle
 from openpyxl.utils import get_column_letter
 
 GREY = "c1c1c1"
+GREEN = ""
 
 def generate_active_recall_spreadsheet(courses_lectures_list, courses_names,
         session_name):
@@ -26,6 +27,33 @@ def generate_active_recall_spreadsheet(courses_lectures_list, courses_names,
     """
     wb = Workbook()
 
+    # generate big picture tab from first tab
+    starting_col = 1
+    row_line = 3
+    ws = wb.active
+    ws.title = "Lectures Recall"
+    for j, course in enumerate(courses_lectures_list):
+        # get course_name
+        course_name = courses_names[j]
+
+        # TODO: make course header
+        row_line += 1 # offset
+        ws.cell(column = starting_col, row = row_line).\
+                value = f"{course_name}"
+        column_letter = get_column_letter(starting_col)
+        ws[f'{column_letter}{row_line}'].fill = PatternFill(
+                fgColor = GREY, fill_type = "solid")
+        ws.merge_cells(f'{column_letter}{row_line}:T{row_line}')
+        row_line += 2 # offset of 1
+
+        # TODO: add all lecture for course
+        for i, lecture in enumerate(course):
+            ws.cell(column = starting_col, row = row_line).\
+                    value = f"{lecture}"
+            row_line += 1
+        #  row_line += 1
+
+    # generate lectures tab for each course
     for j, course in enumerate(courses_lectures_list):
         # create the worksheet
         course_name = courses_names[j]
@@ -44,6 +72,7 @@ def generate_active_recall_spreadsheet(courses_lectures_list, courses_names,
                     fgColor = GREY, fill_type = "solid")
             ws.merge_cells(f'{column_letter}{row_line}:T{row_line}')
             row_line += 10 # offset of 8
+
     # saving spreadsheet
     spreadsheet_name = f"Active Review - {session_name}.xlsx"
     wb.save(spreadsheet_name)
