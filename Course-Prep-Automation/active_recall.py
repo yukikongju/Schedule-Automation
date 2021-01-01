@@ -30,8 +30,11 @@ def generate_active_recall_spreadsheet(courses_lectures_list, courses_names,
     # generate big picture tab from first tab
     starting_col = 1
     row_line = 3
+    col_question_width = 60
     ws = wb.active
     ws.title = "Lectures Recall"
+    #  ws.column_dimensions['A'].width = col_question_width
+    ws.column_dimensions[get_column_letter(starting_col)].width = col_question_width
     for j, course in enumerate(courses_lectures_list):
         # get course_name
         course_name = courses_names[j]
@@ -51,7 +54,6 @@ def generate_active_recall_spreadsheet(courses_lectures_list, courses_names,
             ws.cell(column = starting_col, row = row_line).\
                     value = f"{lecture}"
             row_line += 1
-        #  row_line += 1
 
     # generate lectures tab for each course
     for j, course in enumerate(courses_lectures_list):
@@ -62,16 +64,18 @@ def generate_active_recall_spreadsheet(courses_lectures_list, courses_names,
         # init the variables
         starting_col = 1
         row_line = 4 # starting at line 4
-        print(course_name)
+        ws.column_dimensions[get_column_letter(starting_col)].width =\
+                col_question_width
+        #  print(course_name)
         for i, lecture in enumerate(course):
-            print(lecture)
+            #  print(lecture)
             ws.cell(column = starting_col, row = row_line).\
                     value = f"{lecture}"
             column_letter = get_column_letter(starting_col)
             ws[f'{column_letter}{row_line}'].fill = PatternFill(
                     fgColor = GREY, fill_type = "solid")
             ws.merge_cells(f'{column_letter}{row_line}:T{row_line}')
-            row_line += 10 # offset of 8
+            row_line += 12 # offset of 10
 
     # saving spreadsheet
     spreadsheet_name = f"Active Review - {session_name}.xlsx"
