@@ -52,6 +52,7 @@ Schedule Spreadsheet Screenshot:
 Active Recall Spreadsheet Screenshot:
 
 ![Active Recall](screenshots/active_recall_v1.png)
+![Lectures Recall](screenshots/active_recall_p1.png)
 
 OneNote Document Screenshot:
 
