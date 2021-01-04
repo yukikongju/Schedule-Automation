@@ -14,11 +14,8 @@ import glob
 import openpyxl
 import os
 
-#  from active_recall import generate_active_recall_spreadsheet
-#  from schedule import generate_schedule_spreadsheet
-
-from Spreadsheet import Spreadsheet
-from active_recall import ActiveRecall
+from recall import ActiveRecall
+from schedule import Schedule
 
 download_path = ""
 material_path = "courses_material/winter2020"
@@ -32,14 +29,10 @@ def main():
     # generate_active_recall_spreadsheet
     ar_spreadsheet = ActiveRecall(session_name, material_path,
             courses_lectures_list, courses_names)
-    #  generate_active_recall_spreadsheet(courses_lectures_list, courses_names,
-    #          session_name)
 
     # generate schedule spreadsheet
-    #  generate_schedule_spreadsheet(courses_lectures_list, courses_names,
-    #          session_name)
-
-    pass
+    schedule_spreadsheet = Schedule(session_name, material_path,
+            courses_lectures_list, courses_names)
 
 def get_courses_material():
     """ Get a list for all courses
