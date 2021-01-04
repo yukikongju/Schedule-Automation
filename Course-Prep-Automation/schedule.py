@@ -30,10 +30,6 @@ from openpyxl.styles import Color, PatternFill, Font, Border
 from openpyxl.styles.differential import DifferentialStyle
 from openpyxl.utils import get_column_letter
 
-#  wb = Workbook() # init workbook
-
-#  material_path = "courses_material"
-
 num_slides_per_day = 2 # number of slides to go through per day
 num_lectures_per_day = 2 # number of lecture to attend per day
 num_exercices_per_day = 1 # number of exercices to do per day
