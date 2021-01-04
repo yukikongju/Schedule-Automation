@@ -55,8 +55,29 @@ Ideas to Implement:
 			- Website Link
 			- Youtube Ressources
 		c. Use command
-			``` explorer.exe file.pdf
-			```
+			``` explorer.exe file.pdf ```
 			
 - [ ] Streamlit Stats emailed weekly and downloaded in repository
 - [ ] Download power point automatically
+
+
+"""
+    1. Create a tab file separating the courses material by week for all files
+       specified
+            a. Add pending for all columns
+                * [slides] - green if lecture preparation has been done
+                * [lecture] - green if lecture has been watched
+                * [review] - green if lecture review has been done
+            b. Separe material by weeks
+                * set a number of slides to go through per week
+                * set unavailable day
+                * create a merged bar for row with week
+                * add a start date and end date for the session
+    2. Create a daily schedule from the weekly separation of all tabs
+    3. Open Lecture Notes for the day automatically
+
+"""
+""" Generate Active Recall Spreadsheet for each Lectures
+    1. Get list of lectures for each courses
+    2. Generate header for each lectures and give some space in between
+"""
