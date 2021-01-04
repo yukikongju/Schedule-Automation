@@ -16,6 +16,7 @@ Todo in schedule:
 - [ ] change saved path
 - [ ] remove empty lines from lecture list
 - [ ] add starting week and ending week
+- [ ] add incomplete conditonal formatting for cells
 
 Todo for OneNote Document:
 - [ ] Generate OneNote Document for semester from courses_materials
@@ -29,6 +30,12 @@ Todo for OneNote Document:
 
 Todo in TPs Spreadsheet:
 - [ ] How can we generate practice spreadsheet
+
+Todo in active recall Spreasheet:
+- [ ] Make Column Question wider at initialization
+- [ ] Generate Big picture sheet from all courses
+- [ ] Generate group sections and subsections based on course_materials text
+	  files indentation
 
 
 Ideas to Implement:

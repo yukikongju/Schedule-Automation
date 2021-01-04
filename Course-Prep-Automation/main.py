@@ -31,8 +31,8 @@ def main():
             session_name)
 
     # generate schedule spreadsheet
-    #  generate_schedule_spreadsheet(courses_lectures_list, courses_names,
-    #          session_name)
+    generate_schedule_spreadsheet(courses_lectures_list, courses_names,
+            session_name)
 
     pass
 
