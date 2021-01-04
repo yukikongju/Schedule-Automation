@@ -5,11 +5,11 @@ from openpyxl import Workbook
 class Spreadsheet:
     def __init__(self, session_name, material_path, courses_lectures_list,
             courses_names):
-        self.session_name = session_name               # name of the session
-        self.material_path = material_path     # dir with all classes for the session
+        self.session_name = session_name           
+        self.material_path = material_path    
         self.courses_lectures_list = courses_lectures_list
         self.courses_names = courses_names
-        self.wb = Workbook()                   # initialize the spreadsheet
+        self.wb = Workbook()                 
         self.generate_spreadsheet()
         self.save_spreadsheet()
 

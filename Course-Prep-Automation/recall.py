@@ -1,14 +1,8 @@
 #!/usr/bin/python
 
-""" Generate Active Recall Spreadsheet for each Lectures
-
-    1. Get list of lectures for each courses
-    2. Generate header for each lectures and give some space in between
-
-"""
-import glob
-import openpyxl
-import os
+#  import glob
+#  import openpyxl
+#  import os
 from spreadsheet import Spreadsheet
 
 from openpyxl import Workbook
