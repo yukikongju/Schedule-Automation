@@ -1,10 +1,5 @@
 #!/usr/bin/python
 
-
-#  import glob
-#  import openpyxl
-#  import os
-
 from spreadsheet import Spreadsheet
 
 from openpyxl import Workbook
