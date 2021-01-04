@@ -3,7 +3,7 @@
 """ Generate all Management Documents for a session
     
     Documents to generate:
-        - [ ] Schedule - Session 2 (spreadsheet) : 
+        - [x] Schedule - Session 2 (spreadsheet) : 
         - [x] Active Review - Session 2 (spreadsheet) : 
         - [ ] TPs and Exercices - Session 2 (spreadsheet)
         - [r] Note de Cours - Session 2 (OneNote)
@@ -18,8 +18,8 @@ from active_recall import generate_active_recall_spreadsheet
 from schedule import generate_schedule_spreadsheet
 
 download_path = ""
-#  material_path = "courses_material"
 material_path = "courses_material/winter2020"
+starting_date = "" # TODO: add a date for each week based on starting date
 session_name = "Winter 2020"
 
 def main():
@@ -27,12 +27,12 @@ def main():
     courses_lectures_list, courses_names = get_courses_material()
 
     # generate_active_recall_spreadsheet
-    #  generate_active_recall_spreadsheet(courses_lectures_list, courses_names,
-            #  session_name)
+    generate_active_recall_spreadsheet(courses_lectures_list, courses_names,
+            session_name)
 
     # generate schedule spreadsheet
-    generate_schedule_spreadsheet(courses_lectures_list, courses_names,
-            session_name)
+    #  generate_schedule_spreadsheet(courses_lectures_list, courses_names,
+    #          session_name)
 
     pass
 

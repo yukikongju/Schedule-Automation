@@ -28,9 +28,6 @@ from openpyxl.styles import Color, PatternFill, Font, Border
 from openpyxl.styles.differential import DifferentialStyle
 from openpyxl.utils import get_column_letter
 
-#  from . import utils #DAYS_OF_WEEK_FRENCH
-
-
 wb = Workbook() # init workbook
 
 material_path = "courses_material"
@@ -65,13 +62,11 @@ YELLOW = "ffff33"
 GREEN = "adff2f"
 
 col_titles = ['Slides',             # if lecture has been prepared
+              'TP Prep',            # if questions for the TPs has been added to TPs Spreasheet
               'Lecture',            # if lecture has been attended
               'Review',             # if lecture review has been done
               'Recall'              # if concept has been added to recall sheet
               ]
-
-#  courses_names = [] # a list of the course name
-#  courses_lectures_list = [] # a list of the lecture list for all courses
 
 def generate_schedule_spreadsheet(courses_lectures_list, courses_names,
             session_name):
@@ -81,36 +76,35 @@ def generate_schedule_spreadsheet(courses_lectures_list, courses_names,
     # generate daily schedule
     generate_daily_schedule(courses_lectures_list)
 
-    # TODO: change file path and name
-    #  wb.save(os.path.join(path, 'Schedule - Test.xlsx'))
+    # change file path and name
     spreadsheet_name = f"Schedule - {session_name}.xlsx"
     wb.save(spreadsheet_name)
     pass
 
-def get_courses_material():
-    """ Get a list for all courses
+#  def get_courses_material():
+#      """ Get a list for all courses
 
-        Implementation:
-            - Open all files in the material directory and save courses name as
-              one list and the lectures for each courses as another one
+#          Implementation:
+#              - Open all files in the material directory and save courses name as
+#                one list and the lectures for each courses as another one
 
-        Parameters:
-            - courses_names = ['course1', 'course2']
-            - courses_lectures_list = [['course1_lecture1'],['course2_lecture1']]
+#          Parameters:
+#              - courses_names = ['course1', 'course2']
+#              - courses_lectures_list = [['course1_lecture1'],['course2_lecture1']]
 
-    """
-    os.chdir(material_path) # change directory
-    for text_doc in glob.glob("*.txt"):
-        # get course name
-        course_name = text_doc.replace(".txt", "")
-        # get lecture list
-        lectures_list = []
-        with open(text_doc) as f:
-            lectures_list = [line.strip() for line in f]
-        f.close()
-        # put data into dataframe
-        courses_names.append(course_name) 
-        courses_lectures_list.append([lecture for lecture in lectures_list])
+#      """
+#      os.chdir(material_path) # change directory
+#      for text_doc in glob.glob("*.txt"):
+#          # get course name
+#          course_name = text_doc.replace(".txt", "")
+#          # get lecture list
+#          lectures_list = []
+#          with open(text_doc) as f:
+#              lectures_list = [line.strip() for line in f]
+#          f.close()
+#          # put data into dataframe
+#          courses_names.append(course_name) 
+#          courses_lectures_list.append([lecture for lecture in lectures_list])
 
 
 def generate_courses_tab(courses_lectures_list, courses_names):
@@ -250,7 +244,7 @@ def generate_daily_schedule(courses_lectures_list):
     ws.title = "Daily Schedule"
 
 
-    # TODO: Create week
+    # Create week
     week_count = 1
     row_index = 6 # begin to draw at row 6 
     start_day_column_index = 3 # days of week start at B
@@ -276,7 +270,7 @@ def generate_daily_schedule(courses_lectures_list):
         start_lecture_index = row_index # to reset row index after each iter
         start_slides_index = start_lecture_index + num_lectures_per_day
 
-        # TODO: First Column TITLE name
+        # First Column TITLE name
         # Lecture 1 to n
         for i in range(num_lectures_per_day):
             ws.cell(column = 1, row = row_index, value = f'Lecture {i+1}')
@@ -287,7 +281,7 @@ def generate_daily_schedule(courses_lectures_list):
             row_index += 1
 
 
-        # TODO: Schedule lectures for the week
+        # Schedule lectures for the week
         lecture_days_indexes = [1,2,3,4,5] # lectures from monday to friday only
         for col, day in enumerate(lecture_days_indexes):
             for j in range(num_lectures_per_day):
@@ -298,7 +292,7 @@ def generate_daily_schedule(courses_lectures_list):
                 else:
                     break 
 
-        # TODO: schedule slides for the week
+        # schedule slides for the week
         #  slide_days_indexes = [1,2,3,4,5,7] # samedi is break from slides prep
         slide_days_indexes = [1,2,3,4,5] # slides only on week days
         for col, day in enumerate(slide_days_indexes):
@@ -327,7 +321,7 @@ def get_ordered_lecture_list(courses_lectures_list):
     # initalize the list
     ordered_list = []
 
-    # TODO: retrieve the lectures to watch in order
+    # retrieve the lectures to watch in order
     lecture_index = 0
     while len(courses_lectures_list) != 0:
         # add lectures to list until there are none left
@@ -339,17 +333,17 @@ def get_ordered_lecture_list(courses_lectures_list):
         lecture_index += 1
     return ordered_list
 
-if __name__ == "__main__":
-    # get courses content from directory
-    get_courses_material()
+#  if __name__ == "__main__":
+#      # get courses content from directory
+#      get_courses_material()
 
-    # generate weekly tabs for all courses in the directory
-    generate_courses_tab()
+#      # generate weekly tabs for all courses in the directory
+#      generate_courses_tab()
     
-    # generate daily schedule
-    generate_daily_schedule()
+#      # generate daily schedule
+#      generate_daily_schedule()
 
-    # TODO: change file path and name
-    #  wb.save(os.path.join(path, 'Schedule - Test.xlsx'))
-    spreadsheet_name = "Schedule - Session 2.xlsx"
-    wb.save(spreadsheet_name)
+#      # TODO: change file path and name
+#      #  wb.save(os.path.join(path, 'Schedule - Test.xlsx'))
+#      spreadsheet_name = "Schedule - Session 2.xlsx"
+#      wb.save(spreadsheet_name)
