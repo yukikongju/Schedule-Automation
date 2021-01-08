@@ -7,7 +7,6 @@ from constants import SpreadsheetParameter
 from openpyxl import Workbook
 from openpyxl.formatting.rule import ColorScaleRule, CellIsRule, FormulaRule
 from openpyxl.formatting.rule import Rule
-#  from openpyxl.styles import Color, PatternFill, Font, Border
 from openpyxl.styles import PatternFill, Font, Border
 from openpyxl.styles.differential import DifferentialStyle
 from openpyxl.utils import get_column_letter
