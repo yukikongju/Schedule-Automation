@@ -13,12 +13,15 @@ Lecture 11 - Fenwick Tree
 Lecture 12 - Longest Common Prefix
 Lecture 13 - Balanced Binary Tree
 Lecture 14 - AVL Tree
+Lecture 15 - Indexed Priority Queue
+
 GRAPH THEORY
-Lecture 15 - Intro to graph theory
-Lecture 16 - Shortest Path Algorithm
-Lecture 17 - Bridges and Articulation
-Lecture 18 - Strongly Connected Component
-Lecture 19 - Traveling Salesman
-Lecture 20 - Eulerian Path
-Lecture 21 - Minimum Spanning Trees
-Lecture 22 - Network Flow
+Lecture 16 - Intro to Graph Theory
+Lecture 17 - Common Problems in Graph Theory
+Lecture 18 - Shortest Path Problems
+Lecture 19 - Bridges and Articulations
+Lecture 20 - Strongly Connected Component
+Lecture 21 - Traveling Salesman
+Lecture 22 - Eulerian Path
+Lecture 23 - Minimum Spaning Tree
+Lecture 24 - Network Flow
