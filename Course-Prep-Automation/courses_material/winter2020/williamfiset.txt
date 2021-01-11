@@ -18,10 +18,13 @@ Lecture 15 - Indexed Priority Queue
 GRAPH THEORY
 Lecture 16 - Intro to Graph Theory
 Lecture 17 - Common Problems in Graph Theory
-Lecture 18 - Shortest Path Problems
-Lecture 19 - Bridges and Articulations
-Lecture 20 - Strongly Connected Component
-Lecture 21 - Traveling Salesman
-Lecture 22 - Eulerian Path
-Lecture 23 - Minimum Spaning Tree
-Lecture 24 - Network Flow
+Lecture 18 - Tree Algorithms
+Lecture 19 - Lowest Common Ancestor
+Lecture 20 - Topological Sort
+Lecture 21 - Shortest Path Problems
+Lecture 22 - Bridges and Articulations
+Lecture 23 - Strongly Connected Component
+Lecture 24 - Traveling Salesman
+Lecture 25 - Eulerian Path
+Lecture 26 - Minimum Spaning Tree
+Lecture 27 - Network Flow
