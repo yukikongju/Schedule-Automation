@@ -1,0 +1,50 @@
+Video 1 - Logic 101 (#1): Introduction
+Video 2 - Logic 101 (#2): Overview
+Video 3 - Logic 101 (#3): Finding Simple Sentences
+Video 4 - Logic 101 (#4): Representing Simple Sentences
+Video 5 - Logic 101 (#5): Negation
+Video 6 - Logic 101 (#6): OR/Disjunction
+Video 7 - Logic 101 (#7) Compound Sentences
+Video 8 - Logic 101 (#8): AND/Conjunction
+Video 9 - Logic 101 (#9): Conditional (If-Then) Statements
+Video 10 - Logic 101 (#10): Biconditional (IF AND ONLY IF)
+Video 11 - Logic 101 (#11): Truth Tables
+Video 12 - Logic 101 (#12): Truth Table Practice
+Video 13 - Logic 101 (#13): Why Are "Vacuously True" Statements True?
+Video 14 - Logic 101 (#14): Exclusive OR
+Video 15 - Logic 101 (#15): Complicated Truth Tables
+Video 16 - Logic 101 (#16): Double Negation
+Video 17 - Logic 101 (#17): Material Implication
+Video 18 - Logic 101 (#18): Contraposition
+Video 19 - Logic 101 (#19): DeMorgan's Law, Part 1
+Video 20 - Logic 101 (#20): DeMorgan's Law, Part 2
+Video 21 - Logic 101 (#21): Applying Replacement Rules
+Video 22 - Logic 101 (#22): Associativity
+Video 23 - Logic 101 (#23): Commutativity
+Video 24 - Logic 101 (#24): Hard Replacement Rule Problem
+Video 25 - Logic 101 (#25): Distribution
+Video 26 - Logic 101 (#26): Idempotence
+Video 27 - Logic 101 (#27): Modus Ponens
+Video 28 - Logic 101 (#28): Modus Tollens
+Video 29 - Logic 101 (#29): Disjunctive Syllogism
+Video 30 - Logic 101 (#30): Hypothetical Syllogism
+Video 31 - Logic 101 (#31): Constructive Dilemma
+Video 32 - Logic 101 (#32): Destructive Dilemma
+Video 33 - Logic 101 (#33): Conjunction Introduction
+Video 34 - Logic 101 (#34): Simplification
+Video 34.5 - Logic 101 (#34.5): Biconditional Introduction and Elimination
+Video 35 - Logic 101 (#35): Disjunction Introduction
+Video 36 - Logic 101 (#36): Introduction to Proofs
+Video 37 - Logic 101 (#37): Killer Proof Strategy #1 (DeMorgan's Everything!)
+Video 38 - Logic 101 (#38): Working Backward (Killer Proof Strategy #2)
+Video 39 - Logic 101 (#39): Proof By Contradiction/Indirect Proof
+Video 40 - Logic 101 (#40): Conditional Proofs
+Video 41 - Logic 101 (#41): Tautologies
+Video 42 - Logic 101 (#42): Nested Proofs
+Video 43 - Logic 101 (#43): Proof Practice #1
+Video 44 - Logic 101 (#44): Proof Practice #2, Proof By Contradiction Edition
+Video 45 - Logic 101 (#45): Proof Practice #3, Nested Conditional Proofs Edition
+Video 46 - Logic 101 (#46): Proof By Cases (Killer Proof Strategy #3)
+Video 47 - Logic 101 (#47): Biconditional Tautologies
+Video 48 - Logic 101 (#48): Affirming the Consequent
+Video 49 - Logic 101 (#49): Denying the Antecedent

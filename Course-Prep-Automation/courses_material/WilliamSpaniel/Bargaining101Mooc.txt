@@ -1,0 +1,30 @@
+Video 1 - Bargaining 101 (#1): Introduction (The Bargaining Problem)
+Video 2 - Bargaining 101 (#2): Using Game Theory
+Video 3 - Bargaining 101 (#3): Sources of Bargaining Power
+Video 4 - Bargaining 101 (#4): Ultimatum Game Assumptions
+Video 5 - Bargaining 101 (#5): The Ultimatum Game (Discrete)
+Video 6 - Bargaining 101 (#6): Other Solutions to the Ultimatum Game
+Video 7 - Bargaining 101 (#7): Continuous Ultimatum Game
+Video 8 - Bargaining 101 (#8): Ultimatum Game Uniqueness Proof
+Video 9 - Bargaining 101 (#9): The Power of Counteroffers
+Video 10 - Bargaining 101 (#10): The "Power" of Rejection
+Video 11 - Bargaining 101 (#11): Alternating Offers
+Video 12 - Bargaining 101 (#12): Rubinstein Bargaining
+Video 13 - Bargaining 101 (#13): First Offer Advantage
+Video 14 - Bargaining 101 (#14): Rubinstein Convergence Proof
+Video 15 - Bargaining 101 (#15): Why the Rich Get Richer
+Video 16 - Bargaining 101 (#16): Rubinstein Uniqueness Proof
+Video 17 - Bargaining 101 (#17): The Power of Outside Options
+Video 18 - Bargaining 101 (#18): Value of Being Unique
+Video 19 - Bargaining 101 (#19): Risky Business
+Video 20 - Bargaining 101 (#20): Making Threats Credible
+Video 21 - Bargaining 101 (#21): Introduction to Uncertainty
+Video 22 - Bargaining 101 (#22): Uncertainty and Bargaining Failure
+Video 23 - Bargaining 101 (#23): Incentives to Misrepresent
+Video 24 - Bargaining 101 (#24): Knowledge Is Power
+Video 25 - Bargaining 101 (#25): Risk-Return Tradeoff
+Video 26 - Bargaining 101 (#26): Playing It Safe
+Video 27 - Bargaining 101 (#27): Uncertainty with Continuous Types
+Video 28 - Bargaining 101 (#28): Myserson-Satterthwaite Theorem
+Video 29 - Bargaining 101 (#29): The Skimming Property
+Video 30 - Bargaining 101 (#30): Buying a Used Car and The Market for Lemons
