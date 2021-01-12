@@ -1,0 +1,200 @@
+Video 1 - Introduction to Network Theory
+Video 2 - Electric Charge
+Video 3 - Law of Conservation of Charge
+Video 4 - Electric Current
+Video 5 - Conventional Current vs. Electron Current
+Video 6 - Is Current a Scalar or a Vector Quantity?
+Video 7 - Electric Potential Difference (Voltage)
+Video 8 - Electric Power
+Video 9 - Electric Power (Solved Problem)
+Video 10 - Circuit Elements (Resistor)
+Video 11 - Ohm's Law
+Video 12 - The Concept of Short Circuit
+Video 13 - The Concept of Open Circuit
+Video 14 - Circuit Elements (Inductor)
+Video 15 - Linear and Non-Linear Inductors
+Video 16 - Energy Stored in an Inductor
+Video 17 - Inductor (Important Points)
+Video 18 - Circuit Elements (Capacitor)
+Video 19 - Energy Stored in a Capacitor
+Video 20 - Capacitor (Important Points)
+Video 21 - Dependent and Independent Sources
+Video 22 - Ideal and Practical Voltage Sources
+Video 23 - Ideal and Practical Current Sources
+Video 24 - Voltage Source (Tips & Tricks)
+Video 25 - Current Source (Tips & Tricks)
+Video 26 - Current & Voltage Source (Important Points)
+Video 27 - Node, Path, Loop and Branch
+Video 28 - Kirchhoff's Current Law (KCL)
+Video 29 - Kirchhoff's Voltage Law (KVL)
+Video 30 - KCL and KVL (Solved Problem)
+Video 31 - More Insight into Kirchhoff's Voltage Law (KVL)
+Video 32 - Mesh Analysis
+Video 33 - Mesh Analysis (Solved Problem 1)
+Video 34 - Mesh Analysis (Solved Problem 2)
+Video 35 - Mesh Analysis with Current Source
+Video 36 - Supermesh Analysis
+Video 37 - Supermesh Analysis (Solved Problem)
+Video 38 - Nodal Analysis
+Video 39 - Nodal Analysis (Solved Problem 1)
+Video 40 - Nodal Analysis with Voltage Source
+Video 41 - Nodal Analysis (Solved Problem 2)
+Video 42 - Supernode Analysis
+Video 43 - Supernode Analysis (Solved Problem)
+Video 44 - Series & Parallel Combination of Resistors
+Video 45 - Series & Parallel Combination of Capacitors
+Video 46 - Series & Parallel Combination of Inductors
+Video 47 - Voltage Divider Rule
+Video 48 - Current Divider Rule
+Video 49 - Equivalent Resistance (Solved Problem 1)
+Video 50 - Equivalent Resistance (Solved Problem 2)
+Video 51 - Equivalent Resistance (Solved Problem 3)
+Video 52 - Calculation of Equivalent Resistance Using Symmetry
+Video 53 - Equivalent Resistance (Solved Problem 4)
+Video 54 - Equivalent Resistance of a Cube (Between the Space Diagonal)
+Video 55 - Equivalent Resistance of a Cube (Between the Vertices of an Edge)
+Video 56 - Balanced Bridge
+Video 57 - Balanced Bridge (With Impedances)
+Video 58 - Balanced Bridge (Solved Problem)
+Video 59 - Equivalent Resistance (Solved Problem 7)
+Video 60 - Equivalent Resistance (Solved Problem 8)
+Video 61 - Delta to Wye (Star) Conversion
+Video 62 - Wye (Star) to Delta Conversion
+Video 63 - Delta to Wye & Wye to Delta Conversion (for Capacitors)
+Video 64 - Equivalent Capacitance (Solved Problem 1)
+Video 65 - Equivalent Capacitance (Solved Problem 2)
+Video 66 - Equivalent Capacitance (Solved Problem 3)
+Video 67 - Equivalent Capacitance (Solved Problem 4)
+Video 68 - Active and Passive Elements
+Video 69 - Bidirectional and Unidirectional Elements
+Video 70 - Lumped and Distributed Elements
+Video 71 - Linear and Nonlinear Elements
+Video 72 - Basics of Network Theory (Solved Problem 1)
+Video 73 - Basics of Network Theory (Solved Problem 2)
+Video 74 - Basics of Network Theory (Solved Problem 3)
+Video 75 - Basics of Network Theory (Solved Problem 4)
+Video 76 - Basics of Network Theory (Solved Problem 5)
+Video 77 - Basics of Network Theory (Solved Problem 6)
+Video 78 - Basics of Network Theory (Solved Problem 7) | Problem on Bulbs
+Video 79 - Basics of Network Theory (Solved Problem 8)
+Video 80 - Basics of Network Theory (Solved Problem 9)
+Video 81 - Basics of Network Theory (Solved Problem 10)
+Video 82 - Basics of Network Theory (Solved Problem 11)
+Video 83 - Basics of Network Theory (Solved Problem 12)
+Video 84 - Basics of Network Theory (Solved Problem 13)
+Video 85 - Basics of Network Theory (Solved Problem 14)
+Video 86 - Basics of Network Theory (Solved Problem 15)
+Video 87 - Basics of Network Theory (Solved Problem 16)
+Video 88 - Basics of Network Theory (Solved Problem 17)
+Video 89 - Basics of Network Theory (Solved Problem 18)
+Video 90 - Basics of Network Theory (Solved Problem 19)
+Video 91 - Practice Sheet-1 | Network Theory Basics | Network Theory
+Video 92 - Introduction to Two−Port Networks
+Video 93 - Z−Parameters (or) Impedance Parameters
+Video 94 - Z−Parameters (Solved Problem 1)
+Video 95 - Z−Parameters (Solved Problem 2)
+Video 96 - Y−Parameters (or) Admittance Parameters
+Video 97 - Y−Parameters to Z−Parameters Conversion
+Video 98 - Z−Parameters to Y−Parameters Conversion
+Video 99 - Y−Parameters (Solved Problem 1)
+Video 100 - Y−Parameters (Solved Problem 2)
+Video 101 - h−Parameters (or) Hybrid Parameters
+Video 102 - h−Parameters to Z−Parameters Conversion (and vice versa)
+Video 103 - h−Parameters to Y−Parameters Conversion (and vice versa)
+Video 104 - h−Parameters (Solved Problem)
+Video 105 - g−Parameters (or) Inverse Hybrid Parameters
+Video 106 - Z−Parameters to g−Parameters Conversion (and vice versa)
+Video 107 - ABCD−Parameters (or) Transmission Parameters
+Video 108 - ABCD−Parameters to Z−Parameters Conversion (and vice versa)
+Video 109 - ABCD−Parameters (Solved Problem)
+Video 110 - Concept of Symmetry in Two−Port Networks
+Video 111 - Condition for Symmetry in Two−Port Networks
+Video 112 - Condition for Reciprocity in Two−Port Networks (Part 1)
+Video 113 - Condition for Reciprocity in Two−Port Networks (Part 2)
+Video 114 - Series−Series Interconnection of Two−Port Networks
+Video 115 - Parallel−Parallel Interconnection of Two−Port Networks
+Video 116 - Series−Parallel Interconnection of Two−Port Networks
+Video 117 - Parallel−Series Interconnection of Two−Port Networks
+Video 118 - Cascade Interconnection of Two−Port Networks
+Video 119 - Two−Port Network (Important Shortcuts)
+Video 120 - Bartlett's Bisection Theorem
+Video 121 - Two−Port Networks (Solved Problem 1)
+Video 122 - Two−Port Networks (Solved Problem 2)
+Video 123 - Two−Port Networks (Solved Problem 3)
+Video 124 - Two−Port Networks (Solved Problem 4)
+Video 125 - Two−Port Networks (Solved Problem 5)
+Video 126 - Two−Port Networks (Solved Problem 6)
+Video 127 - Open Circuit & Short Circuit Impedances (In Terms of ABCD-Parameters)
+Video 128 - Two−Port Networks (Solved Problem 7)
+Video 129 - Two−Port Networks (Solved Problem 8)
+Video 130 - ABCD−Parameters of an Ideal Transformer
+Video 131 - ABCD−Parameters of Gyrator
+Video 132 - Practice Sheet-2 | Two-Port Networks | Network Theory
+Video 133 - Sinusoidal Steady-State Analysis (Introduction)
+Video 134 - Sinusoids
+Video 135 - Sinusoids (Solved Problems)
+Video 136 - Phasors
+Video 137 - Phasors (Solved Problem 1)
+Video 138 - Phasors (Solved Problem 2)
+Video 139 - Phasors (Solved Problem 3)
+Video 140 - Phasor Relationship for Resistor
+Video 141 - Phasor Relationship for Inductor
+Video 142 - Phasor Relationship for Capacitor
+Video 143 - Instantaneous Power in AC Circuits
+Video 144 - Average Power in AC Circuits
+Video 145 - Average Power in AC Circuits (Solved Problem 1)
+Video 146 - Average Power in AC Circuits (Solved Problem 2)
+Video 147 - Root Mean Square (RMS) Value
+Video 148 - RMS Value (Solved Problem)
+Video 149 - Apparent Power & Power Factor
+Video 150 - Power Factor (Solved Problem)
+Video 151 - Complex Power & Reactive Power
+Video 152 - Complex Power (Solved Problem)
+Video 153 - Power Triangle
+Video 154 - Power Triangle (Solved Problem)
+Video 155 - Phasor Diagram of Series RL Circuit
+Video 156 - Phasor Diagram of Series RC Circuit
+Video 157 - Phasor Diagram of Series RLC Circuit
+Video 158 - Phasor Diagram of Parallel RL Circuit
+Video 159 - Phasor Diagram of Parallel RC Circuit
+Video 160 - Phasor Diagram of Parallel RLC Circuit
+Video 161 - Sinusoidal Steady-State (Solved Question 1)
+Video 162 - Sinusoidal Steady-State (Solved Question 2)
+Video 163 - Sinusoidal Steady-State (Solved Question 3)
+Video 164 - Sinusoidal Steady-State (Solved Question 4)
+Video 165 - Sinusoidal Steady-State (Solved Question 5)
+Video 166 - RMS & Average Values of Standard Waveforms
+Video 167 - Sinusoidal Steady-State (Solved Question 6)
+Video 168 - Introduction to Network Theorems
+Video 169 - Superposition Theorem
+Video 170 - Superposition Theorem with Dependent Sources
+Video 171 - Superposition Theorem (Problem 2)
+Video 172 - Superposition Theorem (Problem 3)
+Video 173 - Superposition Theorem (Problem 4)
+Video 174 - Thevenin's Theorem
+Video 175 - Thevenin's Theorem (Problem 1)
+Video 176 - Thevenin's Theorem with Dependent Sources
+Video 177 - Thevenin's Theorem (Problem 3)
+Video 178 - Thevenin's Theorem (Problem 4)
+Video 179 - Thevenin's Theorem (Problem 5)
+Video 180 - Thevenin's Theorem (Problem 6)
+Video 181 - Norton's Theorem
+Video 182 - Source Transformation
+Video 183 - Source Transformation (Problem 1)
+Video 184 - Source Transformation (Problem 2)
+Video 185 - Norton's Theorem with Dependent Source
+Video 186 - Norton's Theorem (Problem 2)
+Video 187 - Norton's Theorem (Problem 3)
+Video 188 - Norton's Theorem (Problem 4)
+Video 189 - Norton's Theorem (Problem 5)
+Video 190 - Reciprocity Theorem
+Video 191 - Reciprocity Theorem (Problem 1)
+Video 192 - Reciprocity Theorem (Problem 2)
+Video 193 - Millman's Theorem
+Video 194 - Millman's Theorem (Solved Problem)
+Video 195 - Compensation Theorem
+Video 196 - Substitution Theorem
+Video 197 - Tellegen's Theorem
+Video 198 - Maximum Power Transfer Theorem
+Video 199 - Maximum Power Transfer Theorem (Solved Problem 1)
+Video 200 - Maximum Power Transfer Theorem (Solved Problem 2)

@@ -1,0 +1,26 @@
+Video 1 - Introduction to Power System
+Video 2 - AC Power Supply System
+Video 3 - Power Cut due to Short Circuit
+Video 4 - Load Curve
+Video 5 - Base Load & Peak Load Plants
+Video 6 - Average Load (Pavg)
+Video 7 - Plant Load Factor (PLF)
+Video 8 - Plant Capacity Factor (PCF)
+Video 9 - Plant Usage Factor (PUF)
+Video 10 - Utilization Factor
+Video 11 - Reserve Capacity
+Video 12 - Demand Factor
+Video 13 - Diversity Factor
+Video 14 - Cold Reserve, Hot Reserve, Spinning Reserve & Firm Power
+Video 15 - Economic Factors (Solved Problem 1)
+Video 16 - Economic Factors (Solved Problem 2)
+Video 17 - Economic Factors (Solved Problem 3)
+Video 18 - Economic Factors (Solved Problem 4)
+Video 19 - Importance of high Load factor & Diversity Factor
+Video 20 - Methods to improve Load Factor and Diversity Factor
+Video 21 - Economic Load Dispatch
+Video 22 - Economic Load Dispatch (Solved Problem 1)
+Video 23 - Economic Load Dispatch (Solved Problem 2)
+Video 24 - Economic Load Dispatch (Solved Problem 3)
+Video 25 - Economic Load Dispatch (Solved Problem 4)
+Video 26 - Generating Power Stations (Introduction)

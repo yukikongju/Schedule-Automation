@@ -1,0 +1,43 @@
+Video 1 - Introduction to Control Systems
+Video 2 - System Response Characteristics
+Video 3 - Open Loop Systems
+Video 4 - Closed Loop Systems
+Video 5 - Review of Laplace Transform (Part 1)
+Video 6 - Review of Laplace Transform (Part 2)
+Video 7 - Review of Laplace Transform (Part 3)
+Video 8 - Review of Laplace Transform (Part 4)
+Video 9 - Review of Laplace Transform (Part 5)
+Video 10 - Review of Laplace Transform (Part 6)
+Video 11 - Review of Laplace Transform (Part 7)
+Video 12 - Review of Linear Time-Invariant (LTI) Systems
+Video 13 - Introduction to Transfer Function
+Video 14 - Transfer Function (Solved Problem 1)
+Video 15 - Transfer Function (Solved Problem 2)
+Video 16 - Transfer Function (Solved Problem 3)
+Video 17 - Transfer Function (Solved Problem 4)
+Video 18 - Transfer Function (Solved Problem 5)
+Video 19 - Transfer Function (Solved Problem 6)
+Video 20 - Transfer Function (Solved Problem 7)
+Video 21 - Zeros and Poles of a Transfer Function
+Video 22 - Transfer Function of a Closed Loop System
+Video 23 - Types of Systems
+Video 24 - Initial Value and Final Value Theorems
+Video 25 - Final Value Theorem (Solved Problem)
+Video 26 - Time Constant Form of a Control System
+Video 27 - Time Constant Form (Solved Problem)
+Video 28 - DC Gain of a System
+Video 29 - DC Gain of a System (Solved Problem)
+Video 30 - The Concept of Dominant Pole
+Video 31 - Dominant Pole (Solved Problem)
+Video 32 - Sensitivity of Control System (Part - 1)
+Video 33 - Sensitivity of Control System (Part - 2)
+Video 34 - Sensitivity of Control System (Part - 3)
+Video 35 - Sensitivity of Control System (Solved Example)
+Video 36 - Sensitivity of Control System (Solved Problem)
+Video 37 - Step Response of a System
+Video 38 - Ramp Response of a System
+Video 39 - Basics of Control Systems (Solved Problem 1)
+Video 40 - Basics of Control Systems (Solved Problem 2)
+Video 41 - Basics of Control Systems (Solved Problem 3)
+Video 42 - Basics of Control Systems (Solved Problem 4)
+Video 43 - Basics of Control Systems (Solved Problem 5)

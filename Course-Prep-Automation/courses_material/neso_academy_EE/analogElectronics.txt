@@ -1,0 +1,158 @@
+Video 1 - Semiconductor Materials
+Video 2 - Intrinsic and Extrinsic Semiconductors
+Video 3 - Electron Vs Hole Flow
+Video 4 - Mass Action Law
+Video 5 - Charge Densities in a Semiconductor
+Video 6 - Conductivity of a Semiconductor
+Video 7 - Conductivity of Semiconductors Numerical (Part 1)
+Video 8 - Conductivity of Semiconductors Numerical (Part 2)
+Video 9 - PN Junction Diode (No Applied Bias)
+Video 10 - Barrier Potential
+Video 11 - Width of Depletion Region
+Video 12 - PN Junction Diode (Forward-Bias Condition)
+Video 13 - PN Junction Diode (Reverse-Bias Condition)
+Video 14 - Semiconductor Diode
+Video 15 - V-I Characteristics of PN Junction Diode
+Video 16 - Effects of Temperature on V-I Characteristics
+Video 17 - Ideal Vs Practical Diode
+Video 18 - Diode Equivalent Circuits
+Video 19 - Load Line Analysis of Diode
+Video 20 - Load Line Analysis (Numerical Problem)
+Video 21 - DC or Static Resistance of a Diode
+Video 22 - AC ir Dynamic Resistance of a Diode
+Video 23 - Average AC Resistance of a Diode
+Video 24 - Series Diode Configuration
+Video 25 - Series Diode Configuration (Examples)
+Video 26 - Parallel and Series-Parallel Configuration of Diodes 
+Video 27 - Parallel and Series-Parallel Configuration of Diodes (Examples)
+Video 28 - Introduction to Diode Rectifier Circuits
+Video 29 - Half Wave Rectifier
+Video 30 - Half Wave Rectifier (RMS Load Current & RMS Load Voltage)
+Video 31 - Half Wave Rectifier (Form Factor)
+Video 32 - Half Wave Rectifier (Ripple Factor)
+Video 33 - Half Wave Rectifier (Efficiency & PIV)
+Video 34 - Full Wave Bridge Rectifier
+Video 35 - Full Wave Center-Tapped Rectifier
+Video 36 - Full Wave Rectifier (DC Load Current & DC Load Voltage)
+Video 37 - Full Wave Rectifier (RMS Load Current & RMS Load Voltage)
+Video 38 - Full Wave Rectifier (Form Factor & Ripple Factor)
+Video 39 - Full Wave Rectifier (Efficiency & PIV)
+Video 40 - Diode Rectifier Circuits (Numerical Problem)
+Video 41 - Introduction to Zener Diodes
+Video 42 - Effects of Temperature on Zener Voltage
+Video 43 - Zener Diode as Voltage Regulator (Part 1)
+Video 44 - Zener Diode as Voltage Regulator (Part 2)
+Video 45 - Zener Diode as Voltage Regulator (Part 3)
+Video 46 - Zener Diode as Voltage Regulator (Part 4)
+Video 47 - Zener Diode Numerical Problems (Part 1)
+Video 48 - Zener Diode Numerical Problems (Part 2)
+Video 49 - Voltage Multiplier Circuits (Half Wave Voltage Doubler)
+Video 50 - Voltage Multiplier Circuits (Full Wave Voltage Doubler)
+Video 51 - Voltage Multiplier Circuits (Voltage Tripler & Quadrupler)
+Video 52 - Introduction to Clippers
+Video 53 - Unbiased Series Clippers
+Video 54 - Biased Series Clippers
+Video 55 - Unbiased Parallel Clippers
+Video 56 - Biased Parallel Clippers
+Video 57 - Zener Diode Clipping Circuits
+Video 58 - Combination Clipper Circuits
+Video 59 - Transfer Characteristics of Clipper Circuit
+Video 60 - Introduction to Clampers
+Video 61 - Positive & Negative Clamper Circuits
+Video 62 - Biased Clamper Circuit
+Video 63 - Clampers (Solved Problem)
+Video 64 - Introduction to Bipolar Junction Transistors (BJT)
+Video 65 - Working of Transistors
+Video 66 - Common-Base Configuration of a Transistor
+Video 67 - CB Transistor (Input Characteristics & Early Effect)
+Video 68 - CB Transistor (Output Characteristics)
+Video 69 - Transistor Amplifying Action
+Video 70 - Common-Emitter Configuration of a Transistor
+Video 71 - Common-Emitter Transistor (Input Characteristics)
+Video 72 - Common-Emitter Transistor (Output Characteristics)
+Video 73 - Common-Collector Configuration of a Transistor
+Video 74 - Relation between α , β and γ
+Video 75 - DC Biasing, Load Line & Operating Point of Transistors
+Video 76 - Fixed-Bias Configuration of a Transistor
+Video 77 - Fixed-Bias Configuration (Solved Problem)
+Video 78 - Emitter-Bias Configuration
+Video 79 - Emitter-Bias Configuration (Solved Problem)
+Video 80 - Collector Feedback Biasing
+Video 81 - Collector Feedback Biasing (Solved Problem)
+Video 82 - Collector Feedback Bias with Emitter Resistance
+Video 83 - Voltage Divider Bias
+Video 84 - Voltage Divider Bias (Solved Problem)
+Video 85 - Thermal Runaway in Transistors
+Video 86 - Bias Stabilization and Stability Factors
+Video 87 - Stability Factor for Fixed-Bias Configuration
+Video 88 - Stability Factor for Emitter-Bias Configuration
+Video 89 - Stability Factor for Collector Feedback Biasing
+Video 90 - Stability Factor for Voltage Divider Bias
+Video 91 - Transistor Saturation
+Video 92 - Small Signal Analysis of BJT
+Video 93 - AC Equivalent Circuit of BJT Amplifier
+Video 94 - Hybrid Model (Calculation of h-Parameters)
+Video 95 - Hybrid Model (Equivalent Circuit)
+Video 96 - Analysis of Transistor Amplifier Using h-Parameters (Part 1)
+Video 97 - Analysis of Transistor Amplifier Using h-Parameters (Part 2)
+Video 98 - Analysis of Transistor Amplifier Using h-Parameters (Part 3)
+Video 99 - Approximate Hybrid Equivalent Model
+Video 100 - Conversion of h-Parameters
+Video 101 - re Transistor Model (Part 1)
+Video 102 - re Transistor Model (Part 2)
+Video 103 - re Model (Fixed-Bias Configuration) | Part 1
+Video 104 - re Model (Fixed-Bias Configuration) | Part 2
+Video 105 - re Model (Fixed-Bias Configuration) | Part 3
+Video 106 - re Model (Solved Problem 1)
+Video 107 - re Model (Voltage-Divider Bias)
+Video 108 - re Model (Solved Problem 2)
+Video 109 - Hybrid-π Model
+Video 110 - Hybrid-π Model (Solved Problem)
+Video 111 - Emitter-Follower Configuration (Part 1)
+Video 112 - Emitter-Follower Configuration (Part 2)
+Video 113 - Two-Port Systems Approach
+Video 114 - Two-Port Systems Approach (with Load Resistance)
+Video 115 - Two-Port Systems Approach (with Source Resistance)
+Video 116 - Two-Port Systems Approach (with Source and Load Resistances)
+Video 117 - Two-Port Systems Approach (Solved Problem)
+Video 118 - Cascaded Systems
+Video 119 - Cascaded Systems (Solved Problem)
+Video 120 - Darlington Pair
+Video 121 - Touch Sensor Using Darlington Pair
+Video 122 - DC Analysis of Darlington Circuit
+Video 123 - Introduction to Field-Effect Transistors (FETs)
+Video 124 - Construction and Working of JFET
+Video 125 - Working of JFET (Zero Voltage at the Gate)
+Video 126 - Pinch-off Voltage
+Video 127 - JFET as a Current Source
+Video 128 - Working of JFET (Negative Voltage at the Gate)
+Video 129 - Output or Drain Characteristics of JFET
+Video 130 - JFET as Voltage-Controlled Resistor
+Video 131 - Transfer Characteristics of JFET
+Video 132 - BJT Vs JFET
+Video 133 - Problèmes résolus par JFET (Partie 1)
+Video 134 - JFET Solved Problems (Part 2)
+Video 135 - Construction & Working of Enhancement-Type MOSFET (Part 1)
+Video 136 - Construction & Working of Enhancement-Type MOSFET (Part 2)
+Video 137 - Drain Characteristics of Enhancement-Type MOSFET
+Video 138 - Transfer Characteristics & Symbols of Enhancement Type MOSFETs
+Video 139 - Construction of Depletion-Type MOSFET
+Video 140 - Working of Depletion-Type MOSFET
+Video 141 - Drain & Transfer Characteristics of Depletion-Type MOSFET
+Video 142 - MOSFET Solved Problems (Part 1)
+Video 143 - MOSFET Solved Problems (Part 2)
+Video 144 - Introduction to FET Biasing
+Video 145 - Fixed-Bias Configuration of JFET (Mathematical Approach)
+Video 146 - Fixed-Bias Configuration of JFET (Graphical Approach)
+Video 147 - Fixed-Bias Configuration of JFET (Solved Problem)
+Video 148 - Self-Bias Configuration of JFET (Mathematical Approach)
+Video 149 - Self-Bias Configuration of JFET (Graphical Approach)
+Video 150 - Voltage-Divider Bias Configuration of JFET
+Video 151 - Common-Gate Configuration of JFET
+Video 152 - JFET Biasing (Special Case)
+Video 153 - Introduction to Depletion-Type MOSFET Biasing
+Video 154 - Self-Bias Configuration of Depletion-Type MOSFET
+Video 155 - Depletion-Type MOSFET Biasing (Special Case)
+Video 156 - Voltage-Divider Bias Configuration of Depletion-Type MOSFET
+Video 157 - Depletion-Type MOSFET Biasing (Solved Problem)
+Video 158 - Introduction to Enhancement-Type MOSFET Biasing

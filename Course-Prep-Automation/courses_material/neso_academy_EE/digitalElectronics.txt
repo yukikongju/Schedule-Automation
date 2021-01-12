@@ -1,0 +1,200 @@
+Video 1 - What is Signal?
+Video 2 - What is an Analog Signal?
+Video 3 - What is Digital Signal?
+Video 4 - Need of Digital Signals
+Video 5 - Introduction to Digital Electronics
+Video 6 - Switch and Bits Intuition
+Video 7 - Introduction to Boolean Algebra (Part 1)
+Video 8 - Introduction to Boolean Algebra (Part 2)
+Video 9 - Boolean Algebra Examples (Part 1)
+Video 10 - Boolean Algebra Examples (Part 2)
+Video 11 - Redundancy Theorem (Boolean Algebra Trick)
+Video 12 - Sum of Products (Part 1) | SOP Form
+Video 13 - Sum of Products (Part 2) | SOP Form
+Video 14 - Product of Sums (Part 1) | POS Form
+Video 15 - Product of Sums (Part 2) | POS Form
+Video 16 - SOP and POS Form Examples
+Video 17 - Minimal to Canonical Form Conversion (Part 1)
+Video 18 - Minimal to Canonical Form Conversion (Part 2)
+Video 19 - Examples & Tricks (SOP and POS Forms)
+Video 20 - Positive and Negative Logic
+Video 21 - Dual Form
+Video 22 - Self Dual
+Video 23 - Complement Meaning and Examples
+Video 24 - Venn Diagram
+Video 25 - Switching Circuits (Part 1)
+Video 26 - Switching Circuits (Part 2)
+Video 27 - Statement Problems in Boolean Algebra (Part 1)
+Video 28 - Statement Problems in Boolean Algebra (Part 2)
+Video 29 - Introduction to Number Systems
+Video 30 - Binary Number System
+Video 31 - Decimal to Binary Conversion
+Video 32 - Decimal to Octal Conversion
+Video 33 - Decimal to Hexadecimal Conversion
+Video 34 - Binary to Decimal Conversion
+Video 35 - Octal to Decimal Conversion
+Video 36 - Hexadecimal to Decimal Conversion
+Video 37 - Octal to Binary & Binary to Octal Conversion
+Video 38 - Hexadecimal to Binary & Binary to Hexadecimal Conversion
+Video 39 - Hexadecimal to Octal & Octal to Hexadecimal Conversion
+Video 40 - Binary Addition
+Video 41 - Binary Subtraction
+Video 42 - Binary Multiplication
+Video 43 - Binary Division
+Video 44 - Octal Addition
+Video 45 - Octal Subtraction
+Video 46 - Octal Multiplication
+Video 47 - Hexadecimal Addition
+Video 48 - Hexadecimal Subtraction
+Video 49 - Hexadecimal Multiplication
+Video 50 - r's Complement
+Video 51 - (r-1)'s Complement
+Video 52 - 1's and 2's Complement
+Video 53 - Shortcut for 2's Complement
+Video 54 - Data Representation using Signed Magnitude
+Video 55 - Data Representation using 1's Complement
+Video 56 - Data Representation using 2's Complement
+Video 57 - Binary Subtraction using 1's Complement
+Video 58 - Binary Subtraction using 2's Complement
+Video 59 - Classification of Codes
+Video 60 - Binary Coded Decimal (BCD) Code
+Video 61 - BCD Addition
+Video 62 - Shift Add 3 Method | Simple method for Binary to BCD conversion
+Video 63 - 2421 Code
+Video 64 - Excess-3 Code (XS-3 Code)
+Video 65 - Excess-3 Code Addition
+Video 66 - Introduction to Gray Code
+Video 67 - Binary to Gray Code Conversion
+Video 68 - Gray Code to Binary Conversion
+Video 69 - What is Parity?
+Video 70 - Hamming Code | Error detection
+Video 71 - Hamming Code | Error Correction
+Video 72 - Logic Gates (Part 1)
+Video 73 - Logic Gates (Part 2)
+Video 74 - Logic Gates (Part 3)
+Video 75 - Logic Gates (Part 4)
+Video 76 - Logic Gates (Part 5) | Important!
+Video 77 - Logic Gates (Part 6) | Important!
+Video 78 - NAND Gate as Universal Gate (Part 1)
+Video 79 - NAND Gate as Universal Gate (Part 2)
+Video 80 - NOR Gate as Universal Gate
+Video 81 - Karnaugh Map (K' Map) - Part 1
+Video 82 - Karnaugh Map (K' Map) - Part 2
+Video 83 - Karnaugh Map (K' Map) - Part 3
+Video 84 - K' Map and Implicants
+Video 85 - 4 Variable Karnaugh Map (Part 1)
+Video 86 - 4 Variable Karnaugh Map (Part 2)
+Video 87 - 4 Variable Karnaugh Map (Part 3)
+Video 88 - Don't Care in Karnaugh Map (K' Map)
+Video 89 - Don't Care in K' Map (Response to Doubt)
+Video 90 - K' Map using Max Terms (Part 1)
+Video 91 - K' Map using Max Terms (Part 2)
+Video 92 - 5 variables K' Map
+Video 93 - Quine-McCluskey Minimization Technique (Tabular Method)
+Video 94 - Digital Electronics Previous Year Solution of DRDO & ISRO (Part 2)
+Video 95 - Digital Electronics Previous Year Solution of DRDO & ISRO (Part 3)
+Video 96 - 4-Bit Even Parity Generator
+Video 97 - Seven Segment Display Decoder
+Video 98 - Seven Segment Display Decoder (Part 2)
+Video 99 - Seven Segment Display Decoder (Part 3)
+Video 100 - Comparison between Combinational and Sequential Circuits
+Video 101 - Half Adder
+Video 102 - Full Adder
+Video 103 - Full Adder using Half Adder
+Video 104 - 4 Bit Parallel Adder using Full Adders
+Video 105 - Half Subtractor
+Video 106 - Full Subtractor | Easy Explanation
+Video 107 - Realizing Half Adder using NAND Gates only
+Video 108 - Realizing Half Adder using NOR Gates only
+Video 109 - Realizing Full Adder using NAND Gates only
+Video 110 - Realizing Half Subtractor using NAND Gates only
+Video 111 - Realizing Half Subtractor using NOR Gates only
+Video 112 - Realizing Full Subtractor using NAND Gates only (Part 1)
+Video 113 - Realizing Full Subtractor using NAND Gates only (Part 2)
+Video 114 - 2-Bit Multiplier Using Half Adders
+Video 115 - Carry Lookahead Adder (Part 1) | CLA Generator
+Video 116 - Carry Lookahead Adder (Part 2) | CLA Adder
+Video 117 - BCD Adder | Simple Explanation
+Video 118 - Introduction to Multiplexers | MUX Basic
+Video 119 - 4X1 Multiplexer
+Video 120 - 8X1 Multiplexer
+Video 121 - MUX Tree Basic | 4X1 MUX using 2X1 MUX | Easy Explanation
+Video 122 - Implementing 8X1 MUX using 2X1 MUX
+Video 123 - Implementing 8X1 MUX using 4X1 MUX (Special Case)
+Video 124 - 32X1 MUX using 8X1 MUX
+Video 125 - Implementation of Boolean Function using Multiplexers
+Video 126 - 1-Bit Full Adder using Multiplexer
+Video 127 - Logical Expression from Multiplexer
+Video 128 - Introduction to Demultiplexer | 1:2 DEMUX
+Video 129 - 1:4 Demultiplexer
+Video 130 - Full Subtractor using 1:8 Demultiplexer
+Video 131 - Demultiplexer as Decoder
+Video 132 - 2-Bit Comparator
+Video 133 - Introduction à encodeurs et décodeurs
+Video 134 - Priority Encoder
+Video 135 - Decimal to BCD Encoder
+Video 136 - Octal to Binary Encoder
+Video 137 - Hexadecimal to Binary Encoder
+Video 138 - Full Adder Implementation using Decoder
+Video 139 - Practice Problems on Combinational Circuits (Part 1)
+Video 140 - Practice Problems on Combinational Circuits (Part 2)
+Video 141 - Practice Problems on Combinational Circuits (Part 3)
+Video 142 - Practice Problems on Combinational Circuits (Part 4)
+Video 143 - Digital Electronics Test-1
+Video 144 - Introduction to Sequential Circuits | Important
+Video 145 - SR Latch | NOR and NAND SR Latch
+Video 146 - What is a Clock?
+Video 147 - Triggering Methods in Flip Flops
+Video 148 - How to get Edge Triggering | Simulation using Multisim
+Video 149 - Difference between Latch and Flip Flop
+Video 150 - Introduction to SR Flip Flop
+Video 151 - Truth Table, Characteristic Table and Excitation Table for SR Flip Flop
+Video 152 - Introduction to D flip flop
+Video 153 - Truth Table, Characteristic Table and Excitation Table for D Flip Flop
+Video 154 - Introduction to JK flip flop
+Video 155 - Truth Table, Characteristic Table and Excitation Table for JK flip flop
+Video 156 - Race Around Condition or Racing in JK Flip Flop
+Video 157 - Master Slave JK Flip Flop
+Video 158 - Behaviour of Master Slave D Flip Flop
+Video 159 - Introduction to T flip flop
+Video 160 - Truth Table, Characteristic Table and Excitation Table for T flip flop
+Video 161 - 5 Steps for Flip Flop Conversions | JK to D Flip Flop Conversion
+Video 162 - T Flip Flop to D Flip Flop Conversion
+Video 163 - SR Flip Flop to JK Flip Flop Conversion
+Video 164 - SR Flip Flop to T Flip Flop Conversion
+Video 165 - Preset and Clear Inputs in Flip Flop
+Video 166 - Introduction to State Table, State Diagram & State Equation
+Video 167 - Design Procedure for Clocked Sequential Circuits
+Video 168 - Mealy and Moore State Machines (Part 1)
+Video 169 - Mealy and Moore State Machines (Part 2)
+Video 170 - Analysis of Clocked Sequential Circuits (with D Flip Flop)
+Video 171 - Analysis of Clocked Sequential Circuits (with JK Flip Flop)
+Video 172 - Analysis of Clocked Sequential Circuits (with T Flip Flop)
+Video 173 - Sequence or Pattern Detector
+Video 174 - Sequence Detector (Example)
+Video 175 - State Reduction and Assignment
+Video 176 - ASM Chart
+Video 177 - ASM Chart for Moore State Machine
+Video 178 - Difference between Synchronous and Asynchronous Sequential Circuits
+Video 179 - Introduction to Counters | Important
+Video 180 - Types of Counters | Comparison between Ripple and Synchronous counters
+Video 181 - 3 Bit Asynchronous Up Counter
+Video 182 - 4 Bit Asynchronous Up Counter
+Video 183 - 3 bit & 4 bit Asynchronous Down Counter
+Video 184 - 3 Bit & 4 Bit UP/DOWN Ripple Counter
+Video 185 - Modulus of the Counter & Counting up to Particular Value
+Video 186 - State Diagram of a Counter
+Video 187 - Decade (BCD) Ripple Counter
+Video 188 - How to Design Synchronous Counters | 2-Bit Synchronous Up Counter
+Video 189 - 3-Bit Synchronous Up Counter
+Video 190 - 3-Bit & 4-bit Up/Down Synchronous Counter
+Video 191 - Ring Counter
+Video 192 - Johnson's Counter (Twisted/Switch Tail Ring Counter)
+Video 193 - Introduction to Registers
+Video 194 - Data Formats and Classification of Registers
+Video 195 - Shift Register (SISO Mode)
+Video 196 - Shift Register (SIPO & PIPO Mode)
+Video 197 - Shift Register (PISO Mode)
+Video 198 - Bidirectional Shift Register
+Video 199 - Universal Shift Register
+Video 200 - Video 200 - Video 200 - Video 200 - Video 200 - Practice Problems on Sequential Circuits (Part 2)
