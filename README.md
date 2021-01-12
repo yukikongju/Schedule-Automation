@@ -9,10 +9,6 @@ a list of courses and lectures
 * [Features](#features)
 * [Usage](#usage)
 * [Links](#links)
-	* [Using the Schedule Spreadsheet to schedule tasks]
-	* [Using the Active Recall Spreasheet to retain information]
-	* [Using the spreadsheet to make weekly-daily todos]
-	* [Using the Time Blocking Spreadsheet with Pomodoro]
 * [Implementation](#implementation)
 * [Ressources](#ressources)
 
@@ -74,16 +70,11 @@ Status: uncertain
 
 ## Usage
 
-[to do]
+[coming soon]
+
+## Links
 
 ## Implementation
-
-%% - [ ] Time Tracker: script that create a new file each month
-%% - [ ] Schedule: given the the lecture and project list, produce a spreadsheet
-%%       that indicates the course material that needs to be done for a given
-%%       week.
-%% - [ ] Weekly-Daily Plan: [to do]
-
 
 ## Modules
 
