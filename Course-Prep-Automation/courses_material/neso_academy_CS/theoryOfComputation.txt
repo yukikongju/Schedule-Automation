@@ -1,0 +1,114 @@
+Video 1 - Introduction to Theory of Computation
+Video 2 - Finite State Machine (Prerequisites)
+Video 3 - Finite State Machine (Finite Automata)
+Video 4 - Deterministic Finite Automata (Example 1)
+Video 5 - Deterministic Finite Automata (Example 2)
+Video 6 - Deterministic Finite Automata (Example 3)
+Video 7 - Deterministic Finite Automata (Example 4)
+Video 8 - Regular Languages
+Video 9 - Operations on Regular Languages
+Video 10 - Non-Deterministic Finite Automata
+Video 11 - Formal Definition of Non-Deterministic Finite Automata (NFA)
+Video 12 - Non-Deterministic Finite Automata (Solved Example 1)
+Video 13 - Non-Deterministic Finite Automata (Solved Example 2)
+Video 14 - Non-Deterministic Finite Automata (Solved Example 3)
+Video 15 - Conversion of NFA to DFA
+Video 16 - Conversion of NFA to DFA (Example 1)
+Video 17 - Conversion of NFA to DFA (Example 2)
+Video 18 - Conversion of NFA to DFA (Example 3)
+Video 19 - Conversion of NFA to DFA (Example 4)
+Video 20 - Minimization of Deterministic Finite Automata (DFA)
+Video 21 - Minimization of DFA (Example 1)
+Video 22 - Minimization of DFA (Example 2)
+Video 23 - Minimization of DFA (With Multiple Final States)
+Video 24 - Minimization of DFA (With Unreachable States)
+Video 25 - Myhill Nerode Theorem - Table Filling Method
+Video 26 - Myhill Nerode Theorem - Table Filling Method (Example)
+Video 27 - Finite Automata With Outputs
+Video 28 - Construction of Mealy Machine
+Video 29 - Construction of Mealy Machine (Example 1)
+Video 30 - Construction of Mealy Machine (Example 2)
+Video 31 - Construction of Moore Machine
+Video 32 - Construction of Moore Machine (Example 1)
+Video 33 - Construction of Moore Machine (Example 2)
+Video 34 - Conversion of Moore Machine to Mealy Machine
+Video 35 - Conversion of Moore Machine to Mealy Machine (Example 1)
+Video 36 - Conversion of Moore Machine to Mealy Machine (Example 2)
+Video 37 - Conversion of Mealy Machine to Moore Machine
+Video 38 - Conversion of Mealy Machine to Moore Machine (Example 1)
+Video 39 - Conversion of Mealy Machine to Moore Machine (Example 2)
+Video 40 - Conversion of Mealy Machine to Moore Machine (Using Transition Table)
+Video 41 - Epsilon NFA
+Video 42 - Conversion of Epsilon NFA to NFA
+Video 43 - Conversion of Epsilon NFA to NFA - Examples (Part 1)
+Video 44 - Conversion of Epsilon NFA to NFA - Examples (Part 2)
+Video 45 - Regular Expression
+Video 46 - Regular Expression - Examples
+Video 47 - Identities of Regular Expression
+Video 48 - Arden’s Theorem
+Video 49 - An Example Proof using Identities of Regular Expressions
+Video 50 - Designing Regular Expressions
+Video 51 - NFA to Regular Expression Conversion
+Video 52 - DFA to Regular Expression Conversion
+Video 53 - DFA to Regular Expression Conversion (when the DFA has Multiple Final States)
+Video 54 - Conversion of Regular Expression to Finite Automata
+Video 55 - Conversion of Regular Expression to Finite Automata - Examples (Part 1)
+Video 56 - Conversion of Regular Expression to Finite Automata - Examples (Part 2)
+Video 57 - Conversion of Regular Expression to Finite Automata - Examples (Part 3)
+Video 58 - Equivalence of Two Finite Automata
+Video 59 - Equivalence of Two Finite Automata (Example)
+Video 60 - Pumping Lemma (For Regular Languages)
+Video 61 - Pumping Lemma (For Regular Languages) | Example 1
+Video 62 - Pumping Lemma (For Regular Languages) | Example 2
+Video 63 - Regular Grammar
+Video 64 - Derivations from a Grammar
+Video 65 - Context Free Grammar & Context Free Language
+Video 66 - Regular Languages & Finite Automata (Solved Problem 1)
+Video 67 - Regular Languages & Finite Automata (Solved Problem 2)
+Video 68 - Regular Languages & Finite Automata (Solved Problem 3)
+Video 69 - Regular Languages & Finite Automata (Solved Problem 4)
+Video 70 - Regular Languages & Finite Automata (Solved Problem 5)
+Video 71 - Regular Languages & Finite Automata (Solved Problem 6)
+Video 72 - Method to find whether a string belong to a Grammar or not
+Video 73 - Derivation Tree (Left & Right Derivation Trees)
+Video 74 - Ambiguous Grammar
+Video 75 - Simplification of CFG (Reduction of CFG)
+Video 76 - Simplification of CFG (Removal of Unit Productions)
+Video 77 - Simplification of CFG (Removal of Null Productions)
+Video 78 - Chomsky Normal Form & CFG to CNF Conversion
+Video 79 - Conversion of CFG to Chomsky Normal Form
+Video 80 - Greibach Normal Form & CFG to GNF Conversion
+Video 81 - CFG to GNF Conversion (Removal of Left Recursion)
+Video 82 - Pumping Lemma (For Context Free Languages)
+Video 83 - Pumping Lemma (For Context Free Languages) - Examples (Part 1)
+Video 84 - Pumping Lemma (For Context Free Languages) - Examples (Part 2)
+Video 85 - Pushdown Automata (Introduction)
+Video 86 - Pushdown Automata (Formal Definition)
+Video 87 - Pushdown Automata (Graphical Notation)
+Video 88 - Pushdown Automata Example (Even Palindrome) PART-1
+Video 89 - Pushdown Automata Example (Even Palindrome) PART-2
+Video 90 - Pushdown Automata Example (Even Palindrome) PART-3
+Video 91 - Equivalence of CFG and PDA (Part 1)
+Video 92 - Equivalence of CFG and PDA (Part 2a)
+Video 93 - Equivalence of CFG and PDA (Part 2b)
+Video 94 - Turing Machine - Introduction (Part 1)
+Video 95 - Turing Machine - Introduction (Part 2)
+Video 96 - Turing Machine (Formal Definition)
+Video 97 - Turing Machine (Example 1)
+Video 98 - Turing Machine (Example 2)
+Video 99 - The Church-Turing Thesis
+Video 100 - Turing Machine for Even Palindromes
+Video 101 - Turing Machine Programming Techniques (Part 1)
+Video 102 - Turing Machine Programming Techniques (Part 2)
+Video 103 - Turing Machine Programming Techniques (Part 3)
+Video 104 - Multitape Turing Machine
+Video 105 - Nondeterministic Turing Machine (Part 1)
+Video 106 - Nondeterministic Turing Machine (Part 2)
+Video 107 - Turing Machine as Problem Solvers
+Video 108 - Decidability and Undecidability
+Video 109 - Universal Turing Machine
+Video 110 - The Halting Problem
+Video 111 - Undecidability of the Halting Problem
+Video 112 - The Post Correspondence Problem
+Video 113 - Undecidability of the Post Correspondence Problem
+Video 114 - TOC – Conclusion and Summary
