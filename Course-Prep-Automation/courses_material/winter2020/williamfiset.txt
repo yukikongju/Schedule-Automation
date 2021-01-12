@@ -28,3 +28,16 @@ Lecture 24 - Traveling Salesman
 Lecture 25 - Eulerian Path
 Lecture 26 - Minimum Spaning Tree
 Lecture 27 - Network Flow
+
+SORTING
+Lecture 28 - Insertion Sort
+Lecture 29 - Selection Sort
+Lecture 30 - Merge Sort
+Lecture 31 - Quick Sort
+Lecture 32 - Bubble Sort
+Lecture 33 - Radix Sort
+Lecture 34 - Heap Sort
+Lecture 35 - Shell Sort
+Lecture 36 - Counting Sort
+Lecture 37 - Bucket Sort
+
