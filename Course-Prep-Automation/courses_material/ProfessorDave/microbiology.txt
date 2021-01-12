@@ -1,0 +1,39 @@
+Video 1 - Introduction to the Microbial World
+Video 2 - Microorganisms and Humans: Commensal and Pathogenic Flora
+Video 3 - Taxonomy of Bacteria: Identification and Classification
+Video 4 - Bacterial Pathogenesis: How Bacteria Cause Damage
+Video 5 - Bacterial Infections in Humans
+Video 6 - Food Poisoning: Shiga Toxin-Producing E. coli
+Video 7 - Cholera: Vibrio cholerae O1 and O139
+Video 8 - Typhoid Fever: Salmonella typhi
+Video 9 - Anthrax: Bacillus anthracis
+Video 10 - Lyme Disease: Borrelia burgdorferi
+Video 11 - The Plague: Yersinia pestis
+Video 12 - Multidrug-Resistant Tuberculosis (MDR-TB): Mycobacterium tuberculosis
+Video 13 - Legionnaires’ Disease: Legionella pneumophila
+Video 14 - Gonorrhea: Neisseria gonorrhoeae
+Video 15 - Syphilis: Treponema pallidum
+Video 16 - Whooping Cough: Bordetella pertussis
+Video 17 - Methicillin-Resistant Staphylococcus aureus (MRSA)
+Video 18 - Rocky Mountain Spotted Fever: Rickettsia rickettsii
+Video 19 - Introduction to Virology and Viral Classification
+Video 20 - Virus-Cell Interactions Part 1: Productive vs. Non-Productive
+Video 21 - Virus-Cell Interactions Part 2: Multicellular Hosts
+Video 22 - Routes of Viral Transmission
+Video 23 - The Common Cold (Rhinovirus)
+Video 24 - Influenza (The Flu)
+Video 25 - Herpes Simplex Virus (HSV-1 and HSV-2)
+Video 26 - Chickenpox and Shingles (Varicella-Zoster Virus)
+Video 27 - Mononucleosis (Epstein-Barr Virus)
+Video 28 - Hepatitis A (Hepatovirus A)
+Video 29 - Poliomyelitis (Poliovirus)
+Video 30 - Smallpox (Variola Virus)
+Video 31 - Measles (Genus Morbillivirus)
+Video 32 - Rabies (Genus Lyssavirus)
+Video 33 - West Nile Virus (Genus Flavivirus)
+Video 34 - Human Papillomavirus (HPV)
+Video 35 - Human Immunodeficiency Virus (HIV)
+Video 36 - Ebola Virus (EVD)
+Video 37 - Zika Virus (Genus Flavivirus)
+Video 38 - Severe Acute Respiratory Syndrome (SARS)
+Video 39 - MERS-CoV and SARS-CoV-2 (COVID-19)

@@ -1,0 +1,80 @@
+Video 1 - Introduction to Chemistry
+Video 2 - french
+Video 3 - Measurement and Significant Figures
+Video 4 - Scientific Notation and Dimensional Analysis
+Video 5 - History of Atomic Theory
+Video 6 - Nuclide Symbols: Atomic Number, Mass Number, Ions, and Isotopes
+Video 7 - Balancing Chemical Equations
+Video 8 - The Mole: Avogadro's Number and Stoichiometry
+Video 9 - Limiting Reagents and Percent Yield
+Video 10 - Elemental Analysis: Empirical and Molecular Formulas
+Video 11 - Kinetic Molecular Theory and the Ideal Gas Laws
+Video 12 - Wave-Particle Duality and the Photoelectric Effect
+Video 13 - Bohr Model of the Hydrogen Atom
+Video 14 - Quantum Mechanics of the Electron
+Video 15 - Nombre quantique, Orbitale Atomique et Configuration électronique
+Video 16 - The Periodic Table: Atomic Radius, Ionization Energy and Electronegativity
+Video 17 - The Chemical Bond: Covalent vs. Ionic and Polar vs. Nonpolar
+Video 18 - Naming Ionic Compounds
+Video 19 - Lewis Dot Structures
+Video 20 - VSEPR Theory and Molecular Geometry
+Video 21 - Intermolecular Forces and Boiling Points
+Video 22 - Thermochemistry: Heat and Enthalpy
+Video 23 - Hess's Law and Heats of Formation
+Video 24 - Heat Capacity, Specific Heat, and Calorimetry
+Video 25 - Phase Changes, Heats of Fusion and Vaporization, and Phase Diagrams
+Video 26 - Solution Chemistry and Net Ionic Equations
+Video 27 - Molarity and Dilution
+Video 28 - Solubility and the Born-Haber Cycle
+Video 29 - Molality and Colligative Properties
+Video 30 - The Laws of Thermodynamics, Entropy, and Gibbs Free Energy
+Video 31 - Kinetics: Initial Rates and Integrated Rate Laws
+Video 32 - Energy Diagrams, Catalysts, and Reaction Mechanisms
+Video 33 - Chemical Equilibria and Reaction Quotients
+Video 34 - Le Chatelier's Principle
+Video 35 - Valence Bond Theory, Hybrid Orbitals, and Molecular Orbital Theory
+Video 36 - Acids and Bases, pH and pOH
+Video 37 - Acid-Base Equilibria and Buffer Solutions
+Video 38 - Acid-Base Titration
+Video 39 - Oxidation-Reduction Reactions
+Video 40 - Electrochemistry
+Video 41 - Nuclear Reactions, Radioactivity, Fission and Fusion
+Video 42 - Accuracy and Precision for Data Collection
+Video 43 - Converting Between Temperature Scales (Celsius, Fahrenheit, and Kelvin)
+Video 44 - Visualizing Molecular Geometry With 3D Software
+Video 45 - Calculating Percent Error
+Video 46 - Nomenclature of Oxyacids
+Video 47 - Nomenclature of Hydrated Salts
+Video 48 - Writing Chemical Equations in Words
+Video 49 - The Law of Conservation of Matter
+Video 50 - Expressing Concentration by Mass Percent
+Video 51 - Calculating the Formulas of Hydrated Salts
+Video 52 - What Are Electrolytes?
+Video 53 - Calculating Ion Concentrations in Solution
+Video 54 - Neutralization Reactions
+Video 55 - Dalton's Law and Partial Pressures
+Video 56 - What Are Standard Conditions?
+Video 57 - Molar Gas Volume: Stoichiometry With Gases
+Video 58 - Kinetic Molecular Theory and its Postulates
+Video 59 - Temperature and Gas Solubility
+Video 60 - Balancing Redox Reactions in Acidic and Basic Conditions
+Video 61 - Pseudo Noble Gas Electron Configurations
+Video 62 - Complex Ion Formation
+Video 63 - Lattice Structures in Ionic Solids
+Video 64 - Covalent Bond Energy and Length
+Video 65 - Limitations of VSEPR Theory
+Video 66 - Examples of s-p Mixing in Molecular Orbital Theory
+Video 67 - Measuring Pressure With Barometers and Manometers
+Video 68 - Non-Ideal Gases and the Van der Waals Equation
+Video 69 - Viscosity, Cohesive and Adhesive Forces, Surface Tension, and Capillary Action
+Video 70 - Types of Colloids and Their Properties
+Video 71 - Solubility Product Constant (Ksp)
+Video 72 - Predicting Precipitation With Ksp Values
+Video 73 - Selective Precipitation
+Video 74 - The Common Ion Effect
+Video 75 - Coordination Compounds: Geometry and Nomenclature
+Video 76 - Crystal Field Theory
+Video 77 - Radiometric Dating: Carbon-14 and Uranium-238
+Video 78 - Conductivity and Semiconductors
+Video 79 - Spectrophotometry and Beer's Law
+Video 80 - The Chemistry of Air Purification
