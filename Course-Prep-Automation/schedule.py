@@ -1,5 +1,7 @@
 #!/usr/bin/python
 
+# TODO: refractor with new manager parameters
+
 from spreadsheet import Spreadsheet
 from constants import WeekParameter
 from constants import DaysOfWeek
@@ -38,10 +40,9 @@ class Schedule(Spreadsheet):
                         3. Add conditional formatting for all lectures row
 
         """
-        for j, course_lectures in enumerate(self.courses_lectures_list):
+        for j, course in enumerate(self.courses):
             # create the tab with course name
-            course_name = self.courses_names[j] # course name is saved at index 0
-            ws = self.wb.create_sheet(course_name)
+            ws = self.wb.create_sheet(course.name)
 
             # adding columns titles
             for i, title in enumerate(ScheduleParameter.COL_TITLES):
@@ -61,7 +62,7 @@ class Schedule(Spreadsheet):
             num_tp_per_week = 1
 
             # separe lecture by weeks
-            for lecture in course_lectures:
+            for lecture in course.lectures:
                 # create new week
                 if lecture_index % (WeekParameter.NUM_LECTURES_PER_CLASS_PER_WEEK) == 0:
                     row_index += 1
@@ -231,16 +232,15 @@ class Schedule(Spreadsheet):
         """
         # initalize the list
         ordered_list = []
-
-        # retrieve the lectures to watch in order
+        #  retrieve the lectures to watch in order
         lecture_index = 0
-        while len(self.courses_lectures_list) != 0:
+        while len(self.courses) != 0:
             # add lectures to list until there are none left
-            for i, course in enumerate(self.courses_lectures_list):
-                if len(course) != 0:
-                    ordered_list.append(self.courses_lectures_list[i].pop(0))
+            for i, course in enumerate(self.courses):
+                if len(course.lectures) != 0:
+                    ordered_list.append(self.courses[i].lectures.pop(0))
                 else: # we pop the empty list
-                    self.courses_lectures_list.pop(i)
+                    self.courses.pop(i)
             lecture_index += 1
         return ordered_list
 
