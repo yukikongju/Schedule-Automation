@@ -1,7 +1,5 @@
 #!/usr/bin/python
 
-# TODO: refractor with new manager parameters
-
 from spreadsheet import Spreadsheet
 from constants import Color
 from constants import SpreadsheetParameter

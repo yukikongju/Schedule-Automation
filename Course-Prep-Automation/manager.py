@@ -12,7 +12,7 @@ class SessionManager:
         self.name = name
         self.course_path = course_path
         self.courses = self.fetch_courses()
-        print(self.courses)
+        #  print(self.courses)
         #  self.generate_spreadsheets
 
     def fetch_courses(self):
@@ -41,20 +41,6 @@ class SessionManager:
         return courses
 
     def generate_spreadsheets(self):
-        # TODO: refractor spreadsheet to use manager instead → change spreadsheet constructor and refractor code
-        #  spreadsheets = []
-        # generate_active_recall_spreadsheet
-        ar_spreadsheet = ActiveRecall(self.name, self.courses)
-        #  spreadsheets.append(ar_spreadsheet)
-
-        #  schedule_spreadsheet = Schedule(self.name, self.courses)
-
-        # generate schedule spreadsheet
-
-        #  ar_spreadsheet = ActiveRecall(session_name, material_path,
-        #          courses_lectures_list, courses_names)
-
-        # generate schedule spreadsheet
-        #  schedule_spreadsheet = Schedule(session_name, material_path,
-        #          courses_lectures_list, courses_names)
-        pass
+        recall = ActiveRecall(self.name, self.courses)
+        schedule = Schedule(self.name, self.courses)
+        return 
