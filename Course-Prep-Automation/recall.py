@@ -41,7 +41,7 @@ class ActiveRecall(Spreadsheet):
             row_line += 2 # offset of 1
 
             # add all lecture for course
-            for i, lecture in enumerate(course):
+            for i, lecture in enumerate(course.lectures):
                 ws.cell(column = starting_col, row = row_line).\
                         value = f"{lecture}"
                 row_line += 1
@@ -57,7 +57,7 @@ class ActiveRecall(Spreadsheet):
             row_line = 4 # starting at line 4
             ws.column_dimensions[get_column_letter(starting_col)].width =\
                 SpreadsheetParameter.QUESTION_COL_WIDTH 
-            for i, lecture in enumerate(course):
+            for i, lecture in enumerate(course.lectures):
                 ws.cell(column = starting_col, row = row_line).\
                         value = f"{lecture}"
                 column_letter = get_column_letter(starting_col)

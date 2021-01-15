@@ -2,7 +2,10 @@
 
 import glob
 import os
+
 from course import Course
+from recall import ActiveRecall
+from schedule import Schedule
 
 class SessionManager:
     def __init__(self, name, course_path):
@@ -43,6 +46,8 @@ class SessionManager:
         # generate_active_recall_spreadsheet
         ar_spreadsheet = ActiveRecall(self.name, self.courses)
         #  spreadsheets.append(ar_spreadsheet)
+
+        #  schedule_spreadsheet = Schedule(self.name, self.courses)
 
         # generate schedule spreadsheet
 

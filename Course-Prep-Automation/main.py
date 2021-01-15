@@ -29,7 +29,7 @@ def main():
     # get all lectures for each course
     #  courses_lectures_list, courses_names = get_courses_material()
     manager = SessionManager(session_name, course_path)
-    #  manager.generate_spreadsheets()
+    manager.generate_spreadsheets()
 
     # generate_active_recall_spreadsheet
     #  ar_spreadsheet = ActiveRecall(session_name, material_path,
