@@ -1,5 +1,7 @@
 #!/usr/bin/python
 
+# TODO: refractor with new manager parameters
+
 from spreadsheet import Spreadsheet
 from constants import Color
 from constants import SpreadsheetParameter
@@ -26,14 +28,17 @@ class ActiveRecall(Spreadsheet):
         ws.title = "Lectures Recall"
         ws.column_dimensions[get_column_letter(starting_col)].width =\
                 SpreadsheetParameter.QUESTION_COL_WIDTH 
-        for j, course in enumerate(self.courses_lectures_list):
+        #  for j, course in enumerate(self.courses_lectures_list):
+        for j, course in enumerate(self.courses):
             # get course_name
-            course_name = self.courses_names[j]
+            #  course_name = self.courses_names[j]
+            course_name = course.name
 
             # make course header
             row_line += 1 # offset
             ws.cell(column = starting_col, row = row_line).\
-                    value = f"{course_name}"
+                    value = f"{course.name}"
+                    #  value = f"{course_name}"
             column_letter = get_column_letter(starting_col)
             ws[f'{column_letter}{row_line}'].fill = PatternFill(
                     fgColor = Color.GREY, fill_type = "solid")
@@ -47,10 +52,12 @@ class ActiveRecall(Spreadsheet):
                 row_line += 1
 
     def generate_lectures_tab_for_all_courses(self):
-        for j, course in enumerate(self.courses_lectures_list):
+        #  for j, course in enumerate(self.courses_lectures_list):
+        for j, course in enumerate(self.courses):
             # create the worksheet
-            course_name = self.courses_names[j]
-            ws = self.wb.create_sheet(course_name)
+            #  course_name = self.courses_names[j]
+            course_name = course.name
+            ws = self.wb.create_sheet(course.name)
 
             # init the variables
             starting_col = 1
