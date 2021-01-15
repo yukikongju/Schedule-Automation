@@ -17,22 +17,26 @@ import os
 from recall import ActiveRecall
 from schedule import Schedule
 
+from manager import SessionManager
+
 download_path = ""
-material_path = "courses_material/winter2020"
+#  material_path = "courses_material/winter2020"
+course_path = "courses_material/session2"
 starting_date = "" # TODO: add a date for each week based on starting date
-session_name = "Winter 2020"
+session_name = "Session 2" # TODO: create Session class
 
 def main():
     # get all lectures for each course
-    courses_lectures_list, courses_names = get_courses_material()
+    #  courses_lectures_list, courses_names = get_courses_material()
+    manager = SessionManager(session_name, course_path)
 
     # generate_active_recall_spreadsheet
-    ar_spreadsheet = ActiveRecall(session_name, material_path,
-            courses_lectures_list, courses_names)
+    #  ar_spreadsheet = ActiveRecall(session_name, material_path,
+    #          courses_lectures_list, courses_names)
 
     # generate schedule spreadsheet
-    schedule_spreadsheet = Schedule(session_name, material_path,
-            courses_lectures_list, courses_names)
+    #  schedule_spreadsheet = Schedule(session_name, material_path,
+    #          courses_lectures_list, courses_names)
 
 def get_courses_material():
     """ Get a list for all courses
